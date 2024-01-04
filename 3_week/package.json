@@ -1,0 +1,13 @@
+{
+  "name": "3_week",
+  "version": "1.0.0",
+  "description": "",
+  "main": "10_class_keyword.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  
+  "author": "",
+  "license": "ISC"
+}
