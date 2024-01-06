@@ -15,4 +15,9 @@
   <li>
    Created a basic todo list app using important array functions
  </li>
+  </li>
+  <li>
+   Created a basic employee management app using important array functions
+ </li>
+  
 </ol>
