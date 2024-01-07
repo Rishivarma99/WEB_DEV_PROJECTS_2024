@@ -19,5 +19,8 @@
   <li>
    Created a basic employee management app using important array functions
  </li>
+ <li>
+   Created a basic drum kit project
+ </li>
   
 </ol>
