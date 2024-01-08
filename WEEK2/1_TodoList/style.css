@@ -1,0 +1,17 @@
+
+h1 , h2{
+    text-align: center;
+    color: red;
+}
+
+div{
+    text-align: center;
+    background-color: azure;
+    color: black;
+    margin-top: 30px;
+    height: 500px;
+    font-size: 25px;
+}
+li{
+    cursor: pointer;
+}
