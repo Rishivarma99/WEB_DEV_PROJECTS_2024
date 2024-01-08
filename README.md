@@ -1,7 +1,7 @@
 # WEB_DEV_PROJECTS_2024
 👉THIS REPOSITORY CONSISTS OF WEB DEVELOPMENT PROJECTS DONE BY ME WEEKLY. 
 
-<h2>WEEK-1-JAN-(1-7)</h2>
+<h3>WEEK-1-JAN-(1-7)</h3>
 <ol>
   <li>
    Learned javascript language fundamentals 
@@ -22,5 +22,8 @@
  <li>
    Created a basic drum kit project
  </li>
-  
+</ol>
+<h3>WEEK-2-JAN-(8-14)</h3>
+<ol>
+  <li>Created a todo list using HTML, CSS,JS,and DOM</li>
 </ol>
