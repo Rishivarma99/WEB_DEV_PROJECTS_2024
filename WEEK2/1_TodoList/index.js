@@ -1,4 +1,11 @@
 
+
+// IMPORTANT POINTS : 
+// USE ARROW FUNCTION WE NEED TO WRITE A FUNCTION INSIDE IT
+// USED INDEXOF ARRAY METHOD TO FIND THE INDEX IN TASKS ARRAY TO DELETE A GIVEN TASK 
+// WE SHOULD ADD EVENT LISTNER TO EXECUTE THEM 
+
+
 const addBtn = document.getElementById("add-btn"); // button 
 const taskList = document.getElementById("task-list"); // ul
 
@@ -9,15 +16,51 @@ const tasks = [
     }
 ] ; //array to store a task 
 
+// var list1 = taskList.innerHTML();
+
 // displaythe task that are in an array inside the ul 
 function displayTasks(){
     taskList.innerHTML = ""; // clearing inside the ul 
     for(const task of tasks){
         const li = document.createElement("li");
-        li.textContent = ` ${task.description} - ${task.completed ? "Completed" : "Pending"}`;
+        const span = document.createElement("span");
+
+        li.appendChild(span);
+        span.textContent = ` ${task.description} - ${task.completed ? "Completed" : "Pending"}`;
+       
+        // ADDING DELETE BUTTON TO LIST 
+        const deleteButton = document.createElement("button");
+        deleteButton.textContent = "Delete";
+        deleteButton.style.margin = "5px";
+        
+        li.appendChild(deleteButton);
+        deleteButton.addEventListener("click" , function(){
+            deleteTask(task);
+        })
+        
+        // ADDING EDIT BUTTON 
+        const editButton = document.createElement("button");
+        editButton.textContent = "Edit";
+        editButton.style.margin = "5px";
+        li.appendChild(editButton);
+
+        editButton.addEventListener("click" , function(){
+            editTask(task);
+        })
+
+        const doneButton = document.createElement("button");
+        doneButton.textContent = "Done";
+        doneButton.style.margin = "5px";
+        li.appendChild(doneButton);
+
+        doneButton.addEventListener("click" , function(){
+            toggleTaskCompleted(task);
+        })
+
         // here for evely list we are adding event listner 
-        li.addEventListener("click", () => toggleTaskCompleted(task));
-        li.addEventListener("dblclick" , ()=> editTask(task));
+        // li.addEventListener("click", () => toggleTaskCompleted(task));
+        // li.addEventListener("dblclick" , ()=> editTask(task));
+        
        taskList.appendChild(li);
     }
 }
@@ -66,7 +109,7 @@ function deleteTask(task){
     const index = tasks.indexOf(task);
     if(index!= -1) { // if index found 
       
-        task.splice(index ,1);
+        tasks.splice(index,1);
         displayTasks();
 
     }
@@ -76,3 +119,4 @@ function deleteTask(task){
 // START 
 
 displayTasks();
+
