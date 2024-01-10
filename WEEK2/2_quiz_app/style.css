@@ -1,0 +1,67 @@
+
+body{
+    background-color: #F8FAE5;
+}
+h1,h2{
+    text-align: center;
+}
+
+#main{
+    width: 70%;   
+    margin: 10px auto;
+    font-weight: 700;
+    background-color: #D9EDBF;
+    padding: 30px;
+    padding-left: 10px;
+    padding-top:10px  ;
+    margin-top: 10%;
+    box-sizing: content-box;
+    /* USE OVERFLOW TO MAKE THE CONTENT TO STAY WITHIN BOX DIV */
+    overflow: auto;
+    height: 300px;
+}  
+
+.question{
+ width: 100%;
+ color:#424769;
+ font-size: 30px;
+ margin-bottom: 50px;
+ 
+}
+.options{
+ display: flex;
+ justify-content: space-between;
+ font-size: 25px;
+ color: #7077A1;
+ letter-spacing: 0.09rem;
+}
+.options span{
+    
+}
+
+/* div that have input and submit  */
+#submit-bar{
+ display: flex;
+ justify-content: center;
+ 
+}
+#answer{
+    background-color: #F8FAE5;   
+    padding: 10px;
+    font-size: 1rem;
+    
+}
+
+#submit-btn{
+
+}
+
+#question-change{
+
+ display: flex;
+ justify-content: center;
+ padding: 10px;
+}
+#next{
+ 
+}
