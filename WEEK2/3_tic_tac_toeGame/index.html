@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIC-TAC-TOE</title>
+    <link rel="stylesheet" href="./tic.css">
+    <style>
+
+        body{
+            background-color: #43766C;
+        }
+        h1,h2{
+            text-align: center;
+            color: #F8FAE5;
+           
+        }
+        
+        #main{
+            
+            margin-top: 150px;
+            
+            
+        }
+        #game-box{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            margin: 0 auto;
+            background-color: #B19470;
+        }
+        
+        .cell{
+            border: 1px solid #76453B;
+  text-align: center;
+  font-size: 30px;
+  cursor: pointer;
+
+        }
+       
+        #btn1{
+            width: 100%;
+            text-align: center;
+        } 
+
+        #reset-btn{
+           margin: 40px auto;
+           padding: 5px;
+           font-size: 20px;
+
+         }
+    </style>
+</head>
+<body>
+
+   
+    <h1>TIC-TAC-TOE GAME</h1>
+    <h2>play the game</h2>
+
+    <div id="main">
+       
+        <div id="game-box">
+           
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+
+
+        </div>
+
+    </div>
+    
+    <div id="btn1">
+
+        <button id="reset-btn">RESET</button>
+    </div>
+    
+    <script src="./tic.js"></script>
+</body>
+</html>

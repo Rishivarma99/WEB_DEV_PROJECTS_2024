@@ -1,0 +1,33 @@
+
+body{
+    background-color: #43766C;
+
+}
+
+#main{
+}
+#game-box{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 300px;
+  height: 300px;
+  border: 2px solid black;
+}
+
+.cell{
+    border: 1px solid black;
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
+}
+#btn1{
+    width: 100%;
+    text-align: center;
+} 
+
+#reset-btn{
+   margin: 40px auto;
+   padding: 5px;
+   font-size: 20px;
+
+ }
