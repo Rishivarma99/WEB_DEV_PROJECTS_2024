@@ -1,4 +1,4 @@
-
+// here we can use to buid game sike 
 
 // cells represent all boxes 
 var cells = document.querySelectorAll(".cell"); 
