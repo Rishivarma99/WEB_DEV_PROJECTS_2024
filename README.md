@@ -28,4 +28,6 @@
   <li>Created a todo list using HTML, CSS,JS,and DOM</li>
   <li>updated the todo list app with buttons</li>
   <li>Created a basic quiz app using HTML, CSS,JS,and DOM</li>
+  <li>Created a basic Employee managemnt app using HTML, CSS,JS,and DOM</li>
+  
 </ol>
