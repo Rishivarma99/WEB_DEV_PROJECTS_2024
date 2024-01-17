@@ -1,0 +1,62 @@
+
+#heading {
+    text-align: center;
+}
+
+#employeelistdiv
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    border: 2px solid black;
+    padding: 10px;
+    
+}
+.emp
+{
+     
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    height: 350px;
+    border: 2px solid blue;
+    
+}
+.details { 
+   
+    display: flex;
+    
+}
+
+/* default property name on screen  */
+.propvalue{
+    margin-left: 10px;
+ font-size: 15px;
+ width: 120px;
+}
+
+/* obj property value on screen  */
+
+.uservalue{
+    font-size: 20px;
+
+
+}
+#buttons{
+  text-align: center;
+}
+
+#addbtn{
+ 
+    font-size: 20px;
+    text-align: center;
+    margin: 10px;
+    color: black;
+    
+
+}
+#deletebtn{
+
+display: none;
+}
+#infobtn{
+    font-size: 20px;
+    color: red;
+}

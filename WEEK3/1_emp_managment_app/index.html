@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>EMPLOYEE MANAGEMENT</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        
+        <div id="heading">
+            <h1>ARV TECH SOLUTIONS <span>.ltd</span></h1>
+            <h2>EMPLOYEE MANAGEMENT</h2>
+        </div>
+        <div id="buttons">
+            <button id="add-btn">ADD</button>
+            
+            
+            <!-- filterering the data -->
+            <select name="filter" id="filterSelection" >
+                <!-- VALUES IS VERY IMP TO GET THE VALUE IN JS  -->
+                <option value="demo">select-one</option>
+                <option value="salary">SALARY</option>
+                <option value="experiance">EXPERIANCE</option>
+                <option value="gender">GENDER</option>
+            </select>
+        
+            <button id="filter-btn">Filter</button>
+              <button id="reset-btn">RESET</button>
+              <button id="delete-btn">DELETE</button>
+        </div>
+    </div>  
+
+<p id="resultToShow"></p>
+
+<!-- // EMPLOYEE LIST   -->
+<div id="employeelistdiv">  
+    
+        <!-- EXAMPLE OF EMPLOYEE ELEMENT -->
+        <!-- <div class="emp">
+         <h2>EMPLOYEE MANAGEMENT</h2> -->
+          <!-- <p class="details">  <span class="propvalue">Name </span>   <span class="uservalue">: RISHI varma alluri</span></p>
+         <p class="details"> Gender <span class="gender"></span></p>
+         <p class="details"> Role   <span class="role"></span></p>
+         <p class="details"> Gender  <span class="gender"></span></p>
+        </div>  -->  
+
+</div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
