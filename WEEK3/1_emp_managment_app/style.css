@@ -28,33 +28,52 @@
 /* default property name on screen  */
 .propvalue{
     margin-left: 10px;
- font-size: 15px;
+ font-size: 12px;
  width: 120px;
 }
 
 /* obj property value on screen  */
 
 .uservalue{
-    font-size: 20px;
+    font-size: 17px;
 
 
 }
 #buttons{
-  text-align: center;
+  /* text-align: center; */
+  /* padding:10px; */
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  background-color:burlywood;
+  padding: 10px;
 }
 
-#addbtn{
- 
-    font-size: 20px;
-    text-align: center;
-    margin: 10px;
-    color: black;
+#add-btn{
+    /* font-size: 20px; */
+    /* text-align: center; */
+    /* margin: 10px; */
+    /* color: black; */
     
+}
+#filter-div{
 
 }
-#deletebtn{
+#filter-selection{
 
-display: none;
+}
+#filter-btn{
+
+}
+#reset-btn{
+
+}
+#delete-btn{
+  
+}
+
+.editbtnclass{
+    
 }
 #infobtn{
     font-size: 20px;
