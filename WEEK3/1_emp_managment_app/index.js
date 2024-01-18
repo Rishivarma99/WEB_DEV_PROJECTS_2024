@@ -94,11 +94,14 @@ const deletebtn = document.getElementById("delete-btn");
 
 // FILTERING 
 const fiterBtn = document.getElementById("filter-btn");
-const whatToFilter = document.getElementById("filterSelection");
+const whatToFilter = document.getElementById("filter-selection");
 const result = document.getElementById("resultToShow");
 
 // RESET BUTTON 
 const resetBtn = document.getElementById("reset-btn");
+
+// EDIT BUTTON 
+const editButton = document.getElementById("edit-btn");
 
 function addEmployee() {
 
@@ -140,14 +143,14 @@ function addEmployee() {
       // OBJECT 1 
     const employeeElement = document.createElement("div"); // consit of details of emp div
     employeeElement.classList.add("emp"); // CLASS EMP ADDED 
-    
+  
     for(const [propertyName , propertyValue] of Object.entries(emp))
     {
       if(propertyName == "changeContact"){
         continue;
       }
       const para = document.createElement("p");
-    para.classList.add("details");
+      para.classList.add("details");
     
     const span2 = document.createElement("span"); // default propery 
     span2.classList.add("propvalue");
@@ -159,6 +162,7 @@ function addEmployee() {
     span.classList.add("uservalue");
     span.textContent = propertyValue;
     para.appendChild(span);
+  
 
     employeeElement.appendChild(para);
    
@@ -203,6 +207,30 @@ function filterGender(){
 
 }
 
+function editProperty( id , property){
+  
+  const employees_copy = JSON.parse(JSON.stringify(employees));
+
+  let index = employees_copy.map((emp) => emp.ID).indexOf(id);
+   
+  
+  if(property == "NAME" || property == "ROLE" || property == "GENDER" ){
+    
+    const propertyValue = prompt("ENTER THE PROPERTY VALUE :");
+    employees_copy[index][property] = propertyValue; 
+     
+  }
+  else{
+  const propertyValue = parseInt(prompt("ENTER THE PROPERTY VALUE :"));
+
+    // propertyValue= parseInt(propertyValue);
+    employees_copy[index][property] = propertyValue
+  }
+  return employees_copy;
+
+}
+
+
 fiterBtn.addEventListener("click" , () =>{
     
   const filterValue = whatToFilter.value;
@@ -225,6 +253,7 @@ fiterBtn.addEventListener("click" , () =>{
 
 })
 resetBtn.addEventListener("click" , (Event) => {
+  result.textContent="";
  showEmployeeList2(employees);
 })
 
@@ -234,11 +263,40 @@ deletebtn.addEventListener("click" , function (){
   const deleteType = parseInt(prompt("DELETE BY \n 1.ID \n 2.NAME"));
 
   // if delelte by id 
+  
+  if(deleteType==1){
+    let id = parseInt(prompt("ENTER THE ID TO DELETE : "));
+    const deleteIndex = employees.map((emp) => emp.ID).indexOf(id);
+    
+    employees.splice(deleteIndex,1);
+    alert(`EMPLOYEE WITH ID : ${id} DELETED`); 
+  }
+  else if (deleteType == 2) // name
+  {
+     let name = prompt("ENTER THE NAME OF PERSON TO DELETE: ");
+     const deleteIndex = employees.map((emp) => emp.NAME).indexOf(name);
+    employees.splice(deleteIndex,1);
+    alert(`EMPLOYEE WITH NAME : ${name} DELETED`); 
 
-  const deleteIndex = employees.indexOf()
+
+  }
+  //  WE SHOULD ALSO SHOW THE NEW EMPLOYEE LIST
+  showEmployeeList2(employees);
 
 })
 
+// EDIT PROPERTY
+editButton.addEventListener("click" , function() {
+  
+  let id = parseInt(prompt("ENTER THE PERSON ID TO EDIT:"));
+
+  let property = prompt("ENTER THE PROPERTY TO CHANGE:");
+  
+  showEmployeeList2( editProperty(id , property));
+  alert("updated")
+  
+
+})
 
 // ADDING ADD EVENT LIST
 addbtn.addEventListener("click", addEmployee);
