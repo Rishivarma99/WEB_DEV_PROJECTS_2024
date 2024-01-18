@@ -15,19 +15,23 @@
         <div id="buttons">
             <button id="add-btn">ADD</button>
             
-            
-            <!-- filterering the data -->
-            <select name="filter" id="filterSelection" >
-                <!-- VALUES IS VERY IMP TO GET THE VALUE IN JS  -->
-                <option value="demo">select-one</option>
-                <option value="salary">SALARY</option>
-                <option value="experiance">EXPERIANCE</option>
-                <option value="gender">GENDER</option>
-            </select>
-        
-            <button id="filter-btn">Filter</button>
+             <div id="filter-div">
+
+                 <!-- filterering the data -->
+                 <select name="filter" id="filter-selection" >
+                     <!-- VALUES IS VERY IMP TO GET THE VALUE IN JS  -->
+                     <option value="demo">select-one</option>
+                     <option value="salary">SALARY</option>
+                     <option value="experiance">EXPERIANCE</option>
+                     <option value="gender">GENDER</option>
+                    </select>
+                    
+                    <button id="filter-btn">Filter</button>
+                </div>
               <button id="reset-btn">RESET</button>
               <button id="delete-btn">DELETE</button>
+            <button class="editbtnclass" id="edit-btn">EDIT</button>
+
         </div>
     </div>  
 
@@ -43,7 +47,8 @@
          <p class="details"> Gender <span class="gender"></span></p>
          <p class="details"> Role   <span class="role"></span></p>
          <p class="details"> Gender  <span class="gender"></span></p>
-        </div>  -->  
+        </div>  --> 
+        <button id="editbtn" class="editbtnclass">EDIT</button> 
 
 </div>
 
