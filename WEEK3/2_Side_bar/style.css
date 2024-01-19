@@ -1,0 +1,195 @@
+
+
+/* IMP : 
+   -> TO POSITION THE BAR I USED FIXED POSITON TO
+    FIX TO THE RIGHT END 
+    ->
+    */
+:root {
+    /* dark shades of primary color*/
+    --clr-primary-1: hsl(205, 86%, 17%);
+    --clr-primary-2: hsl(205, 77%, 27%);
+    --clr-primary-3: hsl(205, 72%, 37%);
+    --clr-primary-4: hsl(205, 63%, 48%);
+    /* primary/main color */
+    --clr-primary-5: hsl(205, 78%, 60%);
+    /* lighter shades of primary color */
+    --clr-primary-6: hsl(205, 89%, 70%);
+    --clr-primary-7: hsl(205, 90%, 76%);
+    --clr-primary-8: hsl(205, 86%, 81%);
+    --clr-primary-9: hsl(205, 90%, 88%);
+    --clr-primary-10: hsl(205, 100%, 96%);
+    /* darkest grey - used for headings */
+    --clr-grey-1: hsl(209, 61%, 16%);
+    --clr-grey-2: hsl(211, 39%, 23%);
+    --clr-grey-3: hsl(209, 34%, 30%);
+    --clr-grey-4: hsl(209, 28%, 39%);
+    /* grey used for paragraphs */
+    --clr-grey-5: hsl(210, 22%, 49%);
+    --clr-grey-6: hsl(209, 23%, 60%);
+    --clr-grey-7: hsl(211, 27%, 70%);
+    --clr-grey-8: hsl(210, 31%, 80%);
+    --clr-grey-9: hsl(212, 33%, 89%);
+    --clr-grey-10: hsl(210, 36%, 96%);
+    --clr-white: #fff;
+    --clr-red-dark: hsl(360, 67%, 44%);
+    --clr-red-light: hsl(360, 71%, 66%);
+    --clr-green-dark: hsl(125, 67%, 44%);
+    --clr-green-light: hsl(125, 71%, 66%);
+    --clr-black: #222;
+    --ff-primary: "Roboto", sans-serif;
+    --ff-secondary: "Open Sans", sans-serif;
+    --transition: all 0.3s linear;
+    --spacing: 0.1rem;
+    --radius: 0.25rem;
+    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    --max-width: 1170px;
+    --fixed-width: 620px;
+  }
+
+
+*{
+margin: 0px;
+padding: 0px;
+list-style: none;
+}
+body{
+    background-color: #EEE7DA;
+
+}
+/* #main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+} */
+
+
+
+/* COMPLETE BAR  */
+.side-bar {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 350px;
+    background-color:#88AB8E ;
+}
+
+/* NAV BAR HAVING CODELOGO AND X */
+#side-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* width: 300px; */
+    background-color: #88AB8E;
+    margin:10px ;
+}
+#logo {
+width: 200px;
+background-color: #88AB8E;
+}
+#x-btn{
+    background-color: #88AB8E;
+ 
+    border: 0px;
+    font-size: 30px;
+    color: red;
+}
+#x-btn i {
+    background-color: #88AB8E;
+    
+}
+
+/* PAGES DIV   */
+#pages{
+    
+}
+/* links here is class to ul  */
+.links{  
+    height: 450px;
+    background-color:#88AB8E ;
+    
+}
+.links li{
+    padding: 10px;
+    background-color:#88AB8E ;
+    
+    
+}
+.links a{
+    
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+ 
+    
+    
+}
+.links li:hover {
+    background: #F2F1EB;
+    transition: all 0.3s linear;
+    
+    padding-left: 1.5rem;
+}
+
+
+
+/* SOCILA SITES  */
+
+#social-sites{
+    
+    margin: 0 auto;
+}
+
+/* class of ul  */
+.social-icons {  
+    background-color:#88AB8E ;
+    
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    
+}
+.social-icons li{
+    background-color:#88AB8E ;
+    list-style: none;
+    
+}
+.social-icons a{
+    background-color:#88AB8E ;
+}
+.social-icons i{
+    background-color:#88AB8E ;
+    font-size: 25px;
+}
+
+/* BUTTON NAV  */
+
+#nav-bar-btn{
+    /* font-size: 30px; */
+    /* VERY IMPORTANT  */
+    position: fixed;   
+    top: 2rem;
+    right: 3rem;
+    font-size: 2rem;
+    background: transparent;
+    border-color: transparent;
+    color: var(--clr-primary-5);
+    transition: var(--transition);
+    cursor: pointer;
+    animation: bounce 2s ease-in-out infinite;
+}
+#nav-bar-btn i {
+    /* font-size: 35px; */
+}
+
+
+.show-bar{
+    display: none;
+    width: 0px;
+    overflow: hidden;
+}
+
+.main-change{
+    flex-direction: row-reverse;
+}
