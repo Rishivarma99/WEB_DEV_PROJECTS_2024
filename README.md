@@ -34,4 +34,5 @@
 <h3>WEEK-3-JAN-(15-21)</h3>
 <ol>
   <li>Created a Employee managemnt app using HTML, CSS,JS,and DOM (added filtering option)</li>
+  <li>Created a BASIC SIDE BAR PAGE using HTML, CSS,VANILLA JS,and DOM</li>
 </ol>
