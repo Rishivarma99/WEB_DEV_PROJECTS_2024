@@ -35,4 +35,5 @@
 <ol>
   <li>Created a Employee managemnt app using HTML, CSS,JS,and DOM (added filtering option)</li>
   <li>Created a BASIC SIDE BAR PAGE using HTML, CSS,VANILLA JS,and DOM</li>
+    <li>Created a BASIC MODAL PAGE using HTML, CSS,VANILLA JS,and DOM</li>
 </ol>
