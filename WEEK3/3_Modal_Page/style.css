@@ -1,0 +1,101 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+   
+    
+}
+
+.hero{
+    height: 100vh;
+    background-image: url(./hero.jpeg);
+    display: grid;
+    place-items: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.banner{
+ /* IT SHOWS FOR WIDTH LESS THAN 620PX IT TAKES 90VW  */
+  width: 90vw;
+  /* MAX WIDTH SET FOR NOT TO EXCEEED THIS LIMIT  */
+  max-width: 600px;
+  padding: 4rem 0;
+  text-align: center;
+  background-color: white;
+}
+.banner h1{
+    font-size: 3rem;
+    color: #102a42;
+    text-transform: capitalize;
+    
+}
+#show-modal-btn{
+    font-size: 1rem;
+    padding: 5px 10px;
+    margin-top: 2rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+  background-color: #49a6e9;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  letter-spacing: 0.25rem;
+
+}
+#show-modal-btn:hover{
+    background-color: #ffffff;
+    color:#49a6e9;
+  border: 1px solid #49a6e9;
+
+}
+.modal-overlay{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(73, 166, 233, 0.5);
+    display: grid;
+    place-items: center;
+   visibility: hidden;
+   z-index: -10;
+}
+.open-modal{
+    visibility:visible;
+    z-index: 10;
+}
+.modal-container{
+    width: 90vw;
+    max-width: 600px;
+    background-color: #ffffff;
+     text-align: center;
+     height: 30vh;
+     display: grid;
+     place-items: center;
+     position: relative;
+}
+.modal-container h3{
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+.close-btn{
+    font-size: 2.5rem;
+    color: red;
+    background-color: #ffffff;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    border: 0;
+    transition:  all 0.3s linear;
+
+}
+.close-btn:hover{
+transform: scale(1.4);
+color: #49a6e9;
+}
+
+
+
