@@ -37,3 +37,7 @@
   <li>Created a BASIC SIDE BAR PAGE using HTML, CSS,VANILLA JS,and DOM</li>
     <li>Created a BASIC MODAL PAGE using HTML, CSS,VANILLA JS,and DOM</li>
 </ol>
+<h3>WEEK-4-JAN-(22-28)</h3>
+<ol>
+    <li>Created a BASIC QUESTIONS PAGE using HTML, CSS,VANILLA JS,and DOM</li>
+</ol>
