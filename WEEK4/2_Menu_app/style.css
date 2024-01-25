@@ -1,0 +1,170 @@
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+body{
+ background-color: #f1f5f8;
+}
+*{
+    letter-spacing: 0.75px;
+}
+
+/* menu section  */
+.menu{
+
+    width: 100%;
+    height: 100%;
+    
+    
+}
+
+#menu-center{
+    /* display: grid;
+    place-items: center;
+     */
+     padding-top: 45px;
+}
+#menu-title{
+    margin-bottom: 40px;
+}
+
+#menu-title h1 {
+ font-size: 2rem;
+ margin-bottom: 5px;
+ text-align: center;
+ font-family:  "Roboto", sans-serif;
+ color: 
+ #102a42;
+ font-size: 2.5rem;
+}
+/* TO DO  */
+#menu-title p {  
+    margin: 0;
+    padding: 0;
+    background-color:   #c59d5f;
+    height: 3px;
+    width: 6rem;
+    margin: 0 auto;
+}
+
+.menu-types-btn{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 45px; 
+}
+.menu-types-btn button{
+padding: 2px 5px;
+    margin: 0 0.5rem;
+    background-color: #f1f5f8;
+    color:#c59d5f ;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    border:1px solid  #c59d5f;
+  padding: 5px 10px;
+  text-transform: capitalize;
+  font-family:  "Open Sans", sans-serif;
+  letter-spacing: 1px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.5s linear;
+}
+.menu-types-btn button:hover{
+    color: #f1f5f8;
+    background-color: 
+    #c59d5f;
+  font-weight: 600;
+
+}
+/* ITMES  */
+.menu-items{
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+    
+    margin: 10px auto;
+    width: 95vw;
+    /* THIS MAKE THE ITEM MORE CENTER  */
+    max-width: 1170px;
+    /* GAP IS KEPT 3REM ROW WISE AND 2 REM COL WISE  */
+    gap: 3rem 2rem;
+    justify-content: center;
+
+
+}
+
+.item{
+   /* from flex changed to grid  */
+    display: grid;
+    
+    max-width: 40rem;
+    gap: 0 1.25rem;
+}
+.photo{
+   
+    height: 150px;
+    object-fit: cover;
+    border: 0.25rem solid gold;
+    border-radius: 0.5rem;
+   
+}
+.item-info{
+
+    
+}
+.item-info header{
+ display: flex;
+ justify-content: space-between;
+ /* border bottom created  */
+ border-bottom: 0.5px dotted grey;
+}
+.item-name{
+ margin: 0;
+ margin-bottom:4px ;
+ font-family: "Roboto", sans-serif;
+ letter-spacing: 1.7px;
+}
+.item-price{
+ margin: 0;
+ margin-bottom:4px ;
+color: #c59d5f;
+font-weight: 500;
+    
+}
+
+.item-description{
+    margin-bottom: 0;
+    padding-top: 0.5rem;
+    font-size: 1.2rem;
+    color:  #617d98;
+}
+
+@media (min-width:1200px){
+    .menu-items{
+        grid-template-columns: 1fr 1fr;    
+    }
+
+}
+
+@media (max-width:780px){
+    .photo{
+    width: 100%;
+    height: 175px;
+    }
+    .item{
+        max-width: 25rem;
+     gap:1rem 0;
+    }
+    #menu-title h1{
+        font-size: 2rem;
+    }
+
+
+}
+
+@media(min-width:780px){
+    .item{
+        grid-template-columns: 255px 1fr;
+    }
+}
+
+/* *********** */
+img:not(.logo) {
+    width: 100%;
+}

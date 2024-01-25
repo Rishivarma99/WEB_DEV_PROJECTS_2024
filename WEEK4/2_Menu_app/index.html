@@ -1,0 +1,142 @@
+<!-- IMP : 
+ ->JQUERY LINK ADDED 
+ -> FONT ASWOME LINK WE CAN GET ANY ICONS LINK ADDED 
+  
+     ->GRID : IS VERYT IMPORTANT TO KEEP CHANGES IN MEDIA QUERIIES 
+      -> GRID GAP : IS ROW WISE VALUE , COL VISE VALUE 
+      ->MIN WIDTH: IN MEDIA QUERIES IS FROM A CERTAIN PX TO LARGER 
+      ->tags used : header,section
+      ->attributes : data-(id,name,etc) to sote any info about element
+
+      CSS: ***************
+      ->It is good to add margin bottom for each element for proper gap 
+      ->Using gap makes sure that at smallest screen also items gap is constant 
+      -> Use of max-width make the difference in positioning the content 
+      -> transition : remember (all 0.3s linear )
+      -> Grid is very important for aligning the content 
+      -> for image used widht 100% and object fit -cover 
+      ->border bottom important 
+      ->media queries applied at 
+         ->1200px and above (min-width)
+         -> 780px and below (max-width)
+      -> :not(...) and :hover used 
+           ->img:not(.logo) { // applied to all img tags leaving 
+            width: 100%;     // img tag having class logo
+            }  
+-->
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- ********* FONT ASWOME LIBRARY LINK WE CAN GET ANY ICONS USING CLASS
+     NAME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <section class="menu">
+
+      <div id="menu-center">
+        <!-- tiitle -> menu  -->
+        <header id="menu-title">
+          <h1>Our Menu</h1>
+          <p></p>
+        </header>
+
+        <!-- DIFFERNT FILTER BUTTONS  -->
+        <div class="menu-types-btn">
+          <button id="all" class="menu-btn" value="all">All</button>
+          <button id="breakfast" class="menu-btn" value="breakfast">
+            breakfast
+          </button>
+          <button id="shakes" class="menu-btn" value="shakes" data-id="">shakes</button>
+          <button id="lunch" class="menu-btn" value="lunch">lunch</button>
+          <button id="dinner" class="menu-btn" value="dinner">dinner</button>
+        </div>
+
+        <!-- ITEMS  -->
+        <div class="menu-items">
+          
+            <div class="item" >
+             <img src="../08-menu/final/images/item-1.jpeg" alt="item-1" class="photo" />
+             <div class="item-info">
+               <header>  
+                 <h3 class="item-name">Butter milk pancakes</h3>
+                 <p class="item-price">$ 15.99</p>
+               </header>
+                 <p class="item-description">
+                  I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock
+                  freegan copper mug whatever cold-pressed
+                 </p>
+              </div>
+            </div>
+
+            
+            <div class="item" >
+              <img src="../08-menu/final/images/item-1.jpeg" alt="item-1" class="photo" />
+              <div class="item-info">
+                <header>  
+                  <h3 class="item-name">Butter milk pancakes</h3>
+                  <p class="item-price">$ 15.99</p>
+                </header>
+                <p class="item-description">
+                  I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock
+                  freegan copper mug whatever cold-pressed
+                </p>
+              </div>
+              </div>
+              <div class="item" >
+                <img src="../08-menu/final/images/item-1.jpeg" alt="item-1" class="photo" />
+                <div class="item-info">
+                  <header>  
+                    <h3 class="item-name">Butter milk pancakes</h3>
+                    <p class="item-price">$ 15.99</p>
+                  </header>
+                    <p class="item-description">
+                     I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock
+                     freegan copper mug whatever cold-pressed
+                    </p>
+                 </div>
+               </div>
+               <div class="item" >
+                <img src="../08-menu/final/images/item-1.jpeg" alt="item-1" class="photo" />
+                <div class="item-info">
+                  <header>  
+                    <h3 class="item-name">Butter milk pancakes</h3>
+                    <p class="item-price">$ 15.99</p>
+                  </header>
+                  
+                    <p class="item-description">
+                     I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock
+                     freegan copper mug whatever cold-pressed
+                    </p>
+                 </div>
+               </div>
+
+
+        </div>
+      </div>
+
+    </section>
+
+    <!--jquery added -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
+
+<!-- https://rishivarma99.github.io/Employee-Managment_basicProject/
+ 
+ https://rishivarma99.github.io/TODO_LIST_BasicProject/
+ 
+ https://rishivarma99.github.io/QUESTIONS_APP_BasicProject/ -->
