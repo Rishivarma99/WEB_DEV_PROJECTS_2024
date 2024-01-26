@@ -1,0 +1,55 @@
+
+<!-- VIDEO PAGE : 
+  
+  CSS:
+  ->To hide an div no need to use always display we can also 
+    use z-index and visibility 
+   -> content:"" -> means it sets the after property to not fill extra space 
+      it states that the content for after class is nothing 
+  -> ::after(psuedo element) : Using :after we can create a separate layer to overlay the video-page 
+      here in after zindex is greater than video page so that it overlays the video page 
+  -> PLAY AND PAUSE BTN : WE have created 2 button sung single button element using span 
+
+  JS: 
+  -> VIDEO METHODS : play(), pause()
+  ->get ans set propertie sor attributes of video 
+  ->important eventlistners : load,play ,ended
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video</title>
+
+    <!-- styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- javascript -->
+    
+    <div class="preload-div .hide-preload-div">
+           
+      <img src="./preloader.gif" alt="gif" class="preload-img">
+    </div>
+
+
+    <section class="video-page">
+      
+      <video controls autoplay muted  class="video">
+        <source src="./video.mp4">
+      </video>
+      <h1>video project</h1>
+
+      <button class="switch-btn">
+        <span>Play</span>
+        <span>Pause</span>
+        <span class="switch"></span>
+      </button>
+    </section>
+    
+    
+    <script src="app.js"></script>
+  </body>
+</html>
