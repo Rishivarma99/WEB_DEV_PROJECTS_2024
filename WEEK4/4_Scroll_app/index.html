@@ -1,0 +1,92 @@
+<!-- SCROLL PROJECT:
+  
+  JS:
+  -> we can add event listner on scroll on window 
+    -> to get y distance scroll use - window.scrollY
+ ->window.scrollto:
+ ->element.offsetTop : 
+ ->pageOffsetY: 
+ ->classList.contains:
+ -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scroll</title>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    
+    <header class="home" id="home">
+      
+       
+
+         <div class="nav-center">
+           <div class="nav-header">
+             <img src="./logo.svg" alt="logo">
+            <button class="nav-bar">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>  
+          <ul class="pages-links ">
+            <li><a href="#home" class="scroll-link">Home</a></li>
+            <li><a href="#about" class="scroll-link">About</a></li> 
+            <li><a href="#services" class="scroll-link">Services</a></li> 
+            <li><a href="#tours" class="scroll-link">Tours</a></li> 
+          </ul>
+          
+        </div>
+        
+      
+        
+        <section class="banner">
+         <div class="banner-details" >
+
+           <h1>SCROLL PROJECT</h1>
+           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas eos neque sunt in? Id, necessitatibus quos quisquam distinctio laudantium fugiat?</p>
+           <button href="#tours">
+             EXPLORE TOURS
+            </button>
+          </div>
+          </section>
+
+    </header>
+
+    <section id="about" class="page">
+       
+      <h2 class="page-heading">About <span>Us </span></h2>
+
+    </section>
+
+    <section id="services" class="page">
+      <h2 class="page-heading"> <span>Our </span> services</h2>
+
+    </section>
+    <section id="tours" class="page">
+      <h2 class="page-heading">tours</h2>
+
+    </section>
+
+    <footer>
+      <p>Copyright © Backroads Travel Tours Company 2024. All Rights Reserved</p>
+    </footer>
+
+    <button class="scroll-up scroll-link" >
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+
+    <!-- javascript -->
+    <script src="app.js"></script>
+  </body>
+</html>

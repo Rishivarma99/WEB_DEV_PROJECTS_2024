@@ -1,0 +1,224 @@
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+/* SECTION HOME */
+.home{
+  min-height: 100vh;
+  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
+  url(./hero-bcg.jpeg) center/cover no-repeat;
+ 
+ 
+}
+
+
+
+.nav-center{
+  padding: 1rem;
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.fixed-nav{
+  background-color: #fff !important;
+  color: #102a42;
+}
+
+.nav-header{
+  display: flex;
+  justify-content: space-between;
+  width: 90vw;
+  margin: 0 auto;
+  align-items: center;
+  background-color: #fff;
+  
+}
+.nav-header img {
+  height: 50px;
+}
+/* BUTTON  */
+.nav-bar{
+padding: 5px;
+font-size: 1.7rem;
+background: transparent;
+border: none;
+color: black;
+}
+
+
+.pages-links{
+  height: 0;
+  overflow: hidden;
+  /* transition: all 2s linear; */
+  
+}
+.pages-links li {
+  list-style-type: none;
+}
+
+/* to apply style to a after fixednav is applied  */
+.fixed-nav .pages-links a{
+  color: #102a42;
+
+}
+.fixed-nav .pages-links a:hover{
+  color: #000000;
+  
+}
+.pages-links a{
+  display: block ;
+  padding: 0.9rem;
+  text-decoration: none;
+  font-size: 1.3rem;
+  color:  #617d98;
+  letter-spacing: 0.3rem;
+  
+}
+.pages-links a:hover
+{
+  font-weight: 600;
+  color:#000000 ;
+
+}
+
+.open-pages-links{
+ height: 200px;
+ transition: all 0.5s linear;
+
+}
+.banner{
+  display: grid;
+  place-items: center;
+  
+  height: 100vh;
+}
+.banner-details{
+  max-width: 620px;
+  width: 95vw;
+text-align: center;
+margin-top: 100px;
+}
+.banner-details h1{
+ font-size: 4rem;
+ color: #fff;
+ margin-bottom: 1rem;
+}
+.banner-details p{
+  color: #fff;
+ font-size: 1.2rem;
+ margin-bottom: 1rem;
+
+}
+.banner-details button{
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
+  padding: 1rem;
+
+}
+.banner-details button:hover{
+  color: #617d98;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media (min-width:800px){
+   
+  #nav{
+    background-color: #fff;
+  }
+  .nav-header{
+    display: contents;
+  }
+  .nav-bar{
+    display: none;
+  }
+  .nav-center{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .pages-links{
+    display: flex;
+    height: auto !important ;
+  }
+  .pages-links a{
+    color: #fff;
+  }
+
+  .fixed-nav .pages-links a{
+    color: black;
+  }
+
+}
+
+.page{
+  height: 80vh;
+  background-color: #fff;
+  color: 
+  #102a42;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+.page h2 {
+  margin-block: 10px;
+  
+}
+#about{
+  background-color: #f1f5f8;
+}
+#services{
+
+}
+#tours{
+ background-color:  #f1f5f8;
+}
+.page span{
+  color: 
+  #40cfd4;
+}
+footer{
+  height: 30vh;
+  width: 100%;
+  background-color: 
+  #102a42;
+  display: grid;
+  place-items: center;
+
+}
+footer p {
+  width: 90vw;
+  max-width: 700px;
+  text-align: center;
+  font-size: 1rem;
+  color: #fff;
+  box-sizing: border-box;
+  letter-spacing: 0.25rem;
+}
+.scroll-up{
+  position: fixed;
+  right: 4%;
+  bottom: 10%;
+  font-size: 2.5rem;
+  color: #102a42;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  background-color: #40cfd4;
+  visibility: hidden;
+}
+
+.show-scroll-up{
+  visibility: visible;
+}
