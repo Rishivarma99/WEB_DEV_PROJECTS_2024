@@ -42,4 +42,5 @@
     <li>Created a BASIC QUESTIONS PAGE using HTML, CSS, VANILLA JS, and DOM</li>
    <li><a href="https://rishivarma99.github.io/Menu-app_project/" alt="menu-app">Created a BASIC MENU PAGE using HTML, CSS, VANILLA JS, and DOM</a></li> 
    <li>Created a BASIC VIDEO PAGE using HTML, CSS, VANILLA JS, and DOM</li>
+   <li>Created a  SCROLL PAGE using HTML, CSS, VANILLA JS, and DOM</li>
 </ol>
