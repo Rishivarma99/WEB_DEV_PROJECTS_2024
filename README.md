@@ -44,3 +44,8 @@
    <li>Created a BASIC VIDEO PAGE using HTML, CSS, VANILLA JS, and DOM</li>
    <li>Created a  SCROLL PAGE using HTML, CSS, VANILLA JS, and DOM</li>
 </ol>
+<h3>WEEK-5-JAN-(29-4)-FEB</h3>
+<ol>
+    <li>Created a BASIC TAB PAGE using HTML, CSS, VANILLA JS, and DOM</li>
+</ol>
+
