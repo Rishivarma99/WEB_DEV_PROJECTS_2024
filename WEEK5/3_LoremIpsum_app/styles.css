@@ -1,0 +1,49 @@
+
+body{
+  background-color: #f1f5f8;
+}
+div{
+  margin-top: 100px;
+  text-align: center;
+}
+
+h2{
+  color: #102a42;
+  font-size: 3rem;
+  letter-spacing: 0.2rem;
+}
+
+.main{
+  width: 90vw;
+  max-width: 800px;
+  margin: 0px auto;
+}
+
+#paragraph{
+  font-size: 2rem;
+  margin-right: 20px;
+}
+
+.number-input{
+  border: 1px solid black;
+  margin-right: 20px;
+  height: 50px;
+  width: 80px;
+  font-size: 2.5rem;
+}
+
+.generate-btn{
+  background-color:#49a6e9;
+  color: #000000;
+  padding: 0.5rem;
+}
+
+.display-para{
+ color: #102a42;
+
+}
+.result{
+  color: #102a42;
+  letter-spacing: 0.2rem;
+  
+}
