@@ -47,6 +47,7 @@
 <h3>WEEK-5-JAN-(29-4)-FEB</h3>
 <ol>
     <li>Created a BASIC TAB PAGE using HTML, CSS, VANILLA JS, and DOM</li>
+  <li>Created a BASIC LOREM IPSUM PARA GENERATOR using HTML, CSS, VANILLA JS, and DOM</li>
    <li><a href="https://rishivarma99.github.io/Coundown_app_Project/" alt="menu-app">Created a BASIC COUNTDOWN PAGE using HTML, CSS, VANILLA JS, and DOM</a></li> 
   <li><a href="https://rishivarma99.github.io/Grocery_bud_app_project/" alt="GROCERY-BUD">Created a BASIC GROCERY BUD PAGE using HTML, CSS, VANILLA JS, and DOM </a></li> 
 </ol>
