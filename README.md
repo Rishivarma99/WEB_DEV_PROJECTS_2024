@@ -51,4 +51,8 @@
    <li><a href="https://rishivarma99.github.io/Coundown_app_Project/" alt="menu-app">Created a BASIC COUNTDOWN PAGE using HTML, CSS, VANILLA JS, and DOM</a></li> 
   <li><a href="https://rishivarma99.github.io/Grocery_bud_app_project/" alt="GROCERY-BUD">Created a BASIC GROCERY BUD PAGE using HTML, CSS, VANILLA JS, and DOM </a></li> 
 </ol>
+<h3>WEEK-6-FEB-(05-11)</h3>
+<ol>
+    <li>REVISED PREVIOUS PROJECTS</li>
+</ol>
 
