@@ -58,5 +58,6 @@
 <h3>WEEK-7-FEB-(12-18)</h3>
 <ol>
     <li>REVISED PREVIOUS PROJECTS</li>
+     <li>CREATED A BASIC ZERODHA APP USING HTML,CSS</li>
 </ol>
 
