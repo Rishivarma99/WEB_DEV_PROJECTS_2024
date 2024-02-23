@@ -117,6 +117,6 @@ function deleteTask(task){
 
 
 // START 
-
+// the execution start here 
 displayTasks();
 
