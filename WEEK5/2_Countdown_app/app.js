@@ -43,7 +43,7 @@ const tempDay=tempDate.getDate();
 // at 11:30 0 sec 
 const futureDate = new Date(tempYear,tempMonth,tempDay+10,11,30,0)
 const year = futureDate.getFullYear();
-month = months[futureDate.getMonth()]; //GETTING MONTH IN WORD
+const month = months[futureDate.getMonth()]; //GETTING MONTH IN WORD
 const weekday=weekdays[futureDate.getDay()];// GETTING WEEKDAY IN WORD
 const day = futureDate.getDate(); 
 const hours = futureDate.getHours();
