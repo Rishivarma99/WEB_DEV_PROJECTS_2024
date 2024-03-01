@@ -26,3 +26,6 @@ function sumTill100(){
 console.log("print before the timeout dont wwait to complete");
 //print before the timeout dont wwait to complete     
 //5050
+
+// EXA 2 : READ FILE WILL BE LEARNED AFTER 
+
