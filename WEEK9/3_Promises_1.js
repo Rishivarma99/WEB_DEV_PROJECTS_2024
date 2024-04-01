@@ -23,7 +23,7 @@ const prom1 = new Promise( function(resolve){
  
     setTimeout(function(){
         resolve("promise completed");
-    },1000)
+    },1000);
  
 });
 

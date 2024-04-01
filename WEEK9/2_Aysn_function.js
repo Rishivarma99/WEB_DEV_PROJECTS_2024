@@ -28,7 +28,7 @@
   },5000); // 2nd called 
 
   let a =0 ;
-  for(let i =0 ;i<1000 ;i++){
+  for(let i =0 ;i<100000 ;i++){
     a = a + i ;
     console.log(a);
     
