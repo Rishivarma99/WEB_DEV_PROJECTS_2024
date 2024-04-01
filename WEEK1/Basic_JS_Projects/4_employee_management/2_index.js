@@ -1,20 +1,18 @@
 
 
 class Student{
-   
+  id; 
   name ; 
   age ; 
-   constructor(name,year,age,weigth){
+   constructor(id,name,year,age,weigth){
+     this.id = id ; 
      this.name = name;
      this.year= year;
      this.age = age ;
      this.weigth = weigth; 
    }
-   
-
-  
     getInfo(){ 
-           console.log(`Name : ${this.name} , age : ${this.age}`);
+           console.log(`Id : ${this.id} , Name : ${this.name} , age : ${this.age}`);
    }
   //  IN CLASS CAN APPLY STATIC FILTER WHICH APPLY TO CLASS DIRECTLY NOT TO OBJECTS 
   static filterByAge(employeeArr,minimum_age){
@@ -23,8 +21,8 @@ class Student{
 
 }
 
-let st1 = new Student("Rishi","3rd",21,40);
-let st2 = new Student("Balaji" , "4rt" , 22,60);
+let st1 = new Student(101,"Rishi","3rd",21,40);
+let st2 = new Student(102,"Balaji" , "4rt" , 22,60);
 
 
 const employee = [st1,st2];
@@ -42,34 +40,47 @@ function filterByAgeFunction(employeeArr,age){
   console.log(`\n The filtered Array is : `);
   printInfo(FilteredEmployee);
 }
-filterByAgeFunction(employee,22);
 
 
 function addEmployee(){
     
   const employeeDetails = prompt("Enter details:(id,name,year):");
   const eV = employeeDetails.split(",")
-
-  
-  let newStudent = new Student(eV[1],"2nd",parseInt(eV[2]),60);
-  // const employee = {
-  //     id : parseInt(employeeValues[0]),
-  //     name : employeeValues[1],
-  //     role : employeeValues[2] , 
-  //     salary : parseInt(employeeValues[3]),
-  //     "experiance(yrs)" : parseFloat(employeeValues[4]),  
-  //     contact : parseInt(employeeValues[5]), 
-  //     changeContact(newNum){
-  //         this.contact=newNum;
-  //       } ,
-  //       gender : undefined
-  // }
+  // Adding new student : 
+  let newStudent = new Student(parseInt(eV[0]),eV[1],"2nd",parseInt(eV[2]),60);
   employee.push(newStudent);
-  console.log(`ADDED SUCCESSFULLY WITH ID:${employee.id}`);
+  console.log(`ADDED SUCCESSFULLY WITH ID:${newStudent.id}`);
+  printInfo(employee);
+}
+
+function deleteEmployee(){
+  // JUST NEED TO DELETE THE EMPLOYEE WITH ID NUMBER IN THE ARRAYA EMPLOYEE 
+  
+  printInfo(employee);
+  const Delete_id = parseInt(prompt("Enter the id you want to delete:"));
+ 
+  const idx = employee.findIndex( function(emp){
+    if(emp.id == Delete_id){
+      console.log(emp.id);
+      return true ; 
+    }
+  });
+  
+  if(idx!=-1){
+  
+    employee.splice(idx,1);
+    console.log(`ID number ${Delete_id} is deleted `);
+    
+  }
+  else{
+      console.log(` Id number ${Delete_id} Not found`);
+  }
+  
   printInfo(employee);
 }
 
 addEmployee();
-addEmployee();
+deleteEmployee();
+// addEmployee();
 
 

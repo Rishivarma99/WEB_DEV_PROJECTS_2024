@@ -2,12 +2,9 @@
 // and remove element form the front 
 
 function nextInLine(arr,item){
-
     arr.push(item);
-
     // SHIFT: used to remove an item in the front 
     return arr.shift();
-
 }
 
 var arr = [1,2,3,4,5];

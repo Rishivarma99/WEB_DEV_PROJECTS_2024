@@ -1,3 +1,4 @@
+// ARAYS : 
 
 var arr1 = ["rishi",23,2.23];
 
