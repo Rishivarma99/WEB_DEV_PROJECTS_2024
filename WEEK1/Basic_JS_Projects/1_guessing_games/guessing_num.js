@@ -21,7 +21,9 @@ console.log(randomNum);
 
 for(let i =0 ;i<5 ;i++){
     const userNum = prompt(`Enter your number in range ${minRange} to ${maxRange},Chances left ${i}`);
-
+    if(!userNum || userNum<1){
+        console.log("Invalid guess Retry");
+    }
     if(randomNum-userNum== 0 ){
         alert("WOW YOU GOT IT RIGHT! CONGRATS");
         break ;

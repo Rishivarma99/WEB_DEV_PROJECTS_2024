@@ -1,6 +1,6 @@
  /* 
- REPLACE FUNCTION  :
- ->Creates a new string 
+ REPLACE FUNCTION  : 
+ ->Creates a new string due to string immutability 
  ->USED TO REPLACE CERTAIN GIVEN TARGET
 
  <str_name>.replace(target,replacement) 
@@ -32,12 +32,9 @@ console.log(str2.replace(/\d/,"*")); //*05
 console.log(str3.replace(/\w/,"*")); //*varma&
 console.log(str3.replace(/./g,"*"))  //*******
 
-console.log(str4.replace("Hello","World"));
-
-
+console.log(str4.replace(1,"W"));  // cant change the string at a certain index 
 
 // let ans2 = str2.replace(/\d/,"*") //roll num *05
 // let ans2 = str2.replace(/\w/,"*") //  *oll num 505
 // let ans2 = str2.replace(/\d/g,"*") //roll num ***
-
 // console.log(ans2);
