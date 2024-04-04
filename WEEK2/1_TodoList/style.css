@@ -4,14 +4,33 @@ h1 , h2{
     color: red;
 }
 
+#main{
+
+}
+
+#input-bar{
+
+}
+
 div{
     text-align: center;
     background-color: azure;
     color: black;
     margin-top: 30px;
-    height: 500px;
+    
     font-size: 25px;
 }
 li{
     cursor: pointer;
 }
+
+#task-list{
+
+}
+
+#task-list li{
+
+}
+.deletebtn .editbtn .donebtn{
+    margin: 5px;
+} 

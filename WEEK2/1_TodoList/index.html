@@ -10,7 +10,7 @@
 <body>
      
     <h1>TODO LIST</h1>
-    <H2> DATE : 08-JAN</H2>
+    <H2 id="Present-date"> DATE : 08-JAN </H2>
 
     <div id="main">
          
@@ -20,7 +20,11 @@
         </div>
 
         <ul id="task-list">
-          <li> hw-pending  <button id="delete">delete</button></li>
+          <li> <span> hw-pending </span> 
+            <button action="delete" class="deletebtn">delete</button>
+             <button action="edit" class="editbtn">Edit</button> 
+             <button action="done" class="donebtn">Done</button>
+         </li>
         </ul>
 
     </div>
