@@ -1,3 +1,6 @@
+// USING ARRAYS OF OBJECTS 
+
+
 var questions = [
     {
         no: 1,
