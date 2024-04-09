@@ -18,3 +18,4 @@ root.render(
 );
 
 
+// const root2 = ReactDOM.createRoot( get the element)
