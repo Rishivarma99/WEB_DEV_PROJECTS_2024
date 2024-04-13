@@ -2,6 +2,7 @@
 
 // -> add employee,delete employee , 
 // ARRAY FUNCTIONS USED : filter,split,splice,sort,reduce,map 
+// used mulltipel array functi
 
 
 
