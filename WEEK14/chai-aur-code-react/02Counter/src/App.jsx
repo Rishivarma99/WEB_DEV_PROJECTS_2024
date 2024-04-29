@@ -1,5 +1,6 @@
 // CONSTRAIED THE COUNTER TO 0 TO 20 
 
+// COMPLETE HTML AND JS CODE IS HERE ONLY 
 // used to bring the hooks 
 import { useState ,useEffect } from 'react'
 
