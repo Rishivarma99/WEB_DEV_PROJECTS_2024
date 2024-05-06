@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Components</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <style>
+    .btn-variants{
+        display: inline-flex;
+        gap: 10px;
+        border: 10px solid black;
+        padding: 10px;
+        margin: 5px;
+        
+    }  
+ 
+  </style>
+</head>
+
+<body>
+   
+    <!-- button components and variants  -->
+    <button type="button" class="btn">base class</button>
+<h2>Variants:</h2>
+
+   <div class="btn-variants">
+
+       <button class="btn btn-success" type="button">success</button>
+       
+       <button class="btn btn-primary" type="button">primary</button>
+       <button class="btn btn-light" type="button">light</button>
+    <button class="btn btn-dark" type="button">dark</button>
+    <button class="btn btn-danger" type="button">danger</button>
+    <button class="btn btn-warning" type="button">warning</button>
+    <button class="btn btn-link" type="button" >link</button>
+    
+</div>
+
+<h2>Outline classes:</h2>
+<div class="btn-variants">
+
+ <button class="btn btn-outline-success" type="button">success</button>
+       
+       <button class="btn btn-outline-primary" type="button">primary</button>
+       <button class="btn btn-outline-light" type="button">light</button>
+    <button class="btn btn-outline-dark" type="button">dark</button>
+    <button class="btn btn-outline-danger" type="button">danger</button>
+    <button class="btn btn-outline-warning" type="button">warning</button>
+    <button class="btn btn-outline-link" type="button" >link</button>
+</div>
+
+<h2>Size can be changed</h2>
+<div class="btn-variants">
+    <button class="btn btn-primary btn-sm ">primary-sm</button>
+    
+    <button class="btn btn-primary btn-lg ">primary-lg</button>
+    <button class="btn btn-primary" style="--bs-btn-padding-x:.5rem ; --bs-btn-padding-y:.5rem;--bs-btn-font-size:.75rem">custom </button>
+</div>
+</body>
+
+</html>

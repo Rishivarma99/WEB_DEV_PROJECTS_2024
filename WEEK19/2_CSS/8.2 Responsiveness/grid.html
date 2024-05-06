@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Grid</title>
+  <style>
+    .grid-container {
+      display: grid;
+      /* no of colmuns with their widths in fractions  */
+      grid-template-columns: 1fr 1fr;
+      /* height of rows */
+      grid-template-rows: 100px 200px 200px;
+      gap: 30px;
+    }
+
+    .first {
+      /* span meant to  mix  */
+      /* how many boxes to mix in first card class div */
+      grid-column: span 3;
+    }
+
+    .card {
+      background-color: blue;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>CSS Grid</h1>
+  <div class="grid-container">
+    <div class="first card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+  </div>
+
+</body>
+
+</html>

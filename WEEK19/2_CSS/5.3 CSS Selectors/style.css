@@ -1,0 +1,35 @@
+ol {
+  margin-left: -40px;
+  margin-top: -20px;
+  list-style-position: inside;
+}
+
+/* Write your CSS below, don't change the rules above. */
+
+/* BY TAGS  */
+p {
+  color: red;
+}
+
+/* by class */
+.note{
+  /* should write 20px */
+  font-size: 20px;
+}
+
+/* by id */
+#id-selector-demo{
+  color: green;
+}
+
+/* attribute selector */
+
+/* value = "4"  4 should be in " " - remember  */
+li[value="4"]{
+  color: blue;
+}
+/* universal selctor */
+*{
+    text-align: center;
+}
+

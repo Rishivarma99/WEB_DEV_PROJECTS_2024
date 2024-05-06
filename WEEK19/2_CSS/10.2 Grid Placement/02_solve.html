@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        padding: 0px;
+        margin: 0px;
+    }
+    .container{
+        height: 100vh;
+        display: grid;
+        grid-template-columns:  1fr 1fr 1.5fr ;
+        grid-template-rows: 1fr 1fr;
+        gap: 3rem;
+    }
+    .item{
+        
+        font-size: 5rem;
+        background-color: blueviolet;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .item.cowboy{
+       background-color:#00B9FF;
+       grid-column: span 2;
+     
+    }
+    .item.man{
+       background-color:  #03989E;
+       order: 1;
+
+    }
+</style>
+<body>
+
+    <div class="container">
+        <div class="item cowboy">🤠 </div>
+        <div class="item book">📖 </div>
+        <div class="item man">👨‍🚀 </div>
+
+
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,53 @@
+
+<!-- USER INPUT FORM PEERS -> 
+  ->TEXTFIELD : SIMPLE INPUT-TEXT
+  ->TEXTAREA : col:width and row:height
+  ->checkbok : we choose multiple and we can also unmark them 
+  ->radio button : cant unmark once choosed 
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="submit">
+      
+        <!--TEXT FIELD AND TEXT AREA  -->
+
+        <label for="fisrtname">FIRST NAME:</label>
+        <input type="text" placeholder="Enter your first name"> <br>
+      <br>
+        <label for="Tarea">Test Area</label><br>
+        <textarea name="para" id="textarea" cols="11" rows="1" placeholder="enter your text"></textarea>
+         
+        <!-- checkbox and radio buttons :
+        VALUE : ATTRIBUTE IS VERY IMPORTANT WHILE USING JS 
+        -->
+        
+        <div id="checkbox" style="border: 1px solid black;">
+            <h4>choose your fav development</h4>
+            <input type="checkbox" value="WEB DEV"> <label for="webdev">WEB DEV</label> <br>
+            <input type="checkbox" value="AND DEV"> <label for="anddev">AND DEV</label>
+          
+
+        </div >
+
+       <div id="radiobutton" style="border: 1px solid black;">
+           <h4>Selct your fav time pass</h4> 
+           <input type="radio" value="dance"> <label for="dance">DANCE</label><br>
+           <input type="radio" value="music"> <label for="music">MUSIC</label>
+
+        </div>
+
+
+    </form>
+    
+</body>
+</html>

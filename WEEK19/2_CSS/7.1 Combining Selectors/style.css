@@ -1,0 +1,35 @@
+/* Write your code here: */
+
+
+/* h1 and h2 make color bluevoilet */
+
+/* using group */
+h1 , h2{
+    color: blueviolet;
+}
+
+/* child  */
+.box >.done{
+    color: firebrick;
+}
+
+/* decendant  */
+.box  li{
+    color: blue;
+}
+
+/* OR */
+/* body > div >  ul > li{
+    color: blue;
+} */
+
+/* chaining */
+
+li.done{
+    color: green;
+}
+
+/* combining combiners */
+ul p.done{
+    font-size: 0.5rem;
+}

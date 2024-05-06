@@ -1,0 +1,62 @@
+<!-- ANALYZING THE BOX MODEL AND ITS CONTENT AND OVERFLOW OF CONTENT  -->
+
+<!-- untill border all comes inside box -> using border box  -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+       
+        .parent {
+            width: 100px;
+            height: 100px;
+            box-sizing: border-box;
+        }
+        p1
+        {
+         border: 2px solid black;
+         padding: 10px;
+
+        }
+        .child{
+
+        }
+
+        .container {
+            width: 200px;
+            height: 50px;
+            border: 1px solid black;
+          }
+          
+          .text {
+            padding: 10px;
+            box-sizing: border-box;
+          }
+          
+          .highlight {
+            background-color: yellow;
+          }
+
+    </style>
+  </head>
+  <body>
+    <!-- <div class="parent">
+       <div class="child"> 
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim debitis
+          ex accusantium officia vitae aliquam nulla nihil nemo sapiente
+          delectus temporibus similique unde pariatur maxime non, ullam
+          consequatur placeat optio.
+        </p>
+     </div> 
+    </div> -->
+
+    <div class="container">
+        <p class="text">This text might overflow because of padding!
+          <span class="highlight">Highlighted part.</span>
+        </p>
+      </div>
+  </body>
+</html>

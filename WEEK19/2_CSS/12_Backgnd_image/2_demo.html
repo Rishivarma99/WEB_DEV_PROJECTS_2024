@@ -1,0 +1,38 @@
+
+<!-- ADDING BACKGROUND IMAGE DYNAMICALLY USING JS 
+ IMP:
+    -> WE WILL CREATE A IMG TAG WITH THE IMG SRC AND MAKE ITS DISPLAY
+     PROP AS NONE AND NOW BY USING JS WE ACCES THIS SRC FROM OMG TAG AND ADD IT 
+     BACKGROUND IMG 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo-2</title>
+    <style>
+
+        #my-element{
+            height: 500px;
+            width: 500px;
+            background-position: center;
+            background-repeat: repeat-x;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <!-- IMG TAG THAT IS INVISIBLE ONLY TO GET SRC  -->
+    <img src="./img_2.jpeg" alt="image-1" style="display: none;">
+
+    <!-- element that i want to add the background img dynamically  -->
+    <div id="my-element"> 
+     
+    </div>
+<script src="./2_demo.js"></script>
+</body>
+</html>
