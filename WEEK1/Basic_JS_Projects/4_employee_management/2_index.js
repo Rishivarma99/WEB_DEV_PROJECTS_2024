@@ -21,12 +21,35 @@ class Student{
 
 }
 
-let st1 = new Student(101,"Rishi","3rd",21,40);
+let st1 = new Student(101,"Rishi","3rd",20,40);
 let st2 = new Student(102,"Balaji" , "4rt" , 22,60);
 
 
-const employee = [st1,st2];
+// CREATING AN ARRAY THAT STORE THE OBJECTS CREATED FROM CLASSES 
+const employee = [st1,st2]; 
 // WE NEED TO DO LIKE THIS USING FOR EACH THEN CALL GETINFO FOR EACH OBJECT 
+
+
+function menu () {
+   
+  var key = parseInt(prompt("1.add \n 2.filterByage"));
+  
+  switch (key) {
+    case 1 : 
+    addEmployee();
+    break ;
+
+    case 2  : 
+    const age = parseInt(prompt("Enter minimum age : "));
+    filterByAgeFunction(employee,age);
+    break ; 
+
+    default:
+      console.log("bye");
+  }
+
+}
+
 
 function printInfo(employeeArr){
   employeeArr.forEach((emp) => emp.getInfo());
@@ -35,7 +58,8 @@ function printInfo(employeeArr){
 printInfo(employee);
 
 function filterByAgeFunction(employeeArr,age){
-  const FilteredEmployee =  Student.filterByAge(employeeArr,age);
+  // const FilteredEmployee =  Student.filterByAge(employeeArr,age);
+  const FilteredEmployee = employeeArr.filter( emp => emp.age > age);
    
   console.log(`\n The filtered Array is : `);
   printInfo(FilteredEmployee);
@@ -79,8 +103,7 @@ function deleteEmployee(){
   printInfo(employee);
 }
 
-addEmployee();
-deleteEmployee();
-// addEmployee();
+menu();
+
 
 

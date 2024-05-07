@@ -42,12 +42,20 @@ startmenu();
 function startmenu() {
     var queNum = 0;
 
-    var key1 = parseInt(prompt("Enter 1 to start the quiz:"));
+    var key1 = parseInt(prompt("Enter 1 to start the quiz: \n 2.to get quiz instruction or exit"));
     switch (key1) {
         case 1:
             console.log("Welcome to the Quiz");
-            quizmenu(queNum);
+            quiz(queNum);
             break;
+         
+         case 2 : 
+             console.log("Will be given question with 4 options 1-4 and press 5 to exit the question and go to m,enu ")
+             startmenu(); // return to start menu 
+             break;
+            //  important to keep default 
+         default : 
+         console.log("Exiting The quiz");
     }
 }
 
