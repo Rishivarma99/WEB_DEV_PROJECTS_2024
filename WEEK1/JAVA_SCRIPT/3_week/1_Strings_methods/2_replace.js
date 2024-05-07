@@ -32,7 +32,7 @@ console.log(str2.replace(/\d/,"*")); //*05
 console.log(str3.replace(/\w/,"*")); //*varma&
 console.log(str3.replace(/./g,"*"))  //*******
 
-console.log(str4.replace(1,"W"));  // cant change the string at a certain index 
+console.log(str4.replace("W","e"));  // cant change the string at a certain index 
 
 // let ans2 = str2.replace(/\d/,"*") //roll num *05
 // let ans2 = str2.replace(/\w/,"*") //  *oll num 505

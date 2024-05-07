@@ -1,5 +1,6 @@
 
 /**
+ * indexOf : gives first occurance 
   lastIndex : 
   ->
   

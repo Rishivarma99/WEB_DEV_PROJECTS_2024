@@ -18,6 +18,12 @@ console.log(arr1);
 
 var arr2 = [0,1,2,3];
 
+// TO REPLACE A ELEMENT WE NEED TO BOTH DELETE AND REPLACE 
+
+console.log(arr2.splice(1,1,0.3));
+console.log(arr2);
+
 console.log("array2 after splice : ");
 arr2.splice(2,1,"a","b");
 console.log();
+

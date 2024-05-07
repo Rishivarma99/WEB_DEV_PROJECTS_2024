@@ -5,14 +5,9 @@
 
 // Ask range 
 //PROMT IS A STRING WE NEED TO CONVERT INTO DESIRED ****************
-const minRange1 = prompt("Enter min range");
-const maxRange1 =prompt("Enter max range");
-
-const minRange = parseInt(minRange1);
-const maxRange = parseInt(maxRange1);
-// var minRange = 1;
-// var maxRange = 10;
-
+const minRange = parseInt(prompt("Enter min range"));
+const maxRange =parseInt(prompt("Enter max range"));
+// GENERATE RANDOM NUMBER 
 const randomNum = Math.floor(Math.random() * (maxRange - minRange + 1) ) + minRange ; //give 1 to 10 
 
 console.log(randomNum);
@@ -20,7 +15,7 @@ console.log(randomNum);
 // ask user to give number 
 
 for(let i =0 ;i<5 ;i++){
-    const userNum = prompt(`Enter your number in range ${minRange} to ${maxRange},Chances left ${i}`);
+    const userNum = prompt(`Enter your number in range ${minRange} to ${maxRange},Chances left ${5-i}`);
     if(!userNum || userNum<1){
         console.log("Invalid guess Retry");
     }
