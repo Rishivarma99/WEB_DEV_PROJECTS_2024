@@ -1,4 +1,6 @@
 
+// "use strict"; // if applied undeclared variable dont work 
+
 let catName = "luca";
 var dogName = "lucy";
 
@@ -40,7 +42,7 @@ function constCheck (str){
     
     const sentence = str + " is cool";
 
-    // sentence = str + " is amazing " // cant redeclare 
+    // sentence = str + " is amazing " // ERROR : cant redeclare 
 
 }
 

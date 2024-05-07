@@ -1,5 +1,8 @@
+// IMPORTANT ⭐
 
-// USING CONST CANT BE REDECLARE WHOLE ARRAY 
+// USING CONST CANT BE REDECLARE WHOLE ARRAY BUT INDIVIDUAL ELEMENTS IN ARRAY 
+// CAN BE REDECLARED 
+
 const arr1 = [1,3,5];
 const arr2 =[6];
 // mutation is nothing but manipulating array 

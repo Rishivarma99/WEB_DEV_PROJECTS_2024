@@ -1,3 +1,5 @@
+// FUNTIONS : 
+// -> RESUABLE CODE AND NO NEED TO DECLARE THE TYPE IN FUNCTION ARGUMENTS OR PARAMETERS 
 
 function reusableCode(){
     console.log("this is resued");

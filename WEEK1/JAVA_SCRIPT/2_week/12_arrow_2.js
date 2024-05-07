@@ -1,4 +1,5 @@
 
+// NUMBER.isInteger(<num>) - to check weather a num is integer or not 
 // given a array with muliple numbers only square the integers and greater than 0 numbers 
 
 var arr1 = [-1,-2,3,-4,5,1.2,3.5];

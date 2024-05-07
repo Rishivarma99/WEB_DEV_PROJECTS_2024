@@ -42,7 +42,7 @@ console.log(checkStrictInEqual(10,11));
 
 // EASY WAY TO RETURN BOOLEAN VALUES 
 
-function check1(a,b){
+function Ṇcheck1(a,b){
     // return true if b is greter 
     // than a and otherwise false
     return a<b ;

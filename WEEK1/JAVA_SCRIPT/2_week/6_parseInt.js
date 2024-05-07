@@ -1,4 +1,6 @@
+// IMPORTANT ⭐
 
+// uising parseInt(<str>,2)->we can convert string number to its binary values 
 
 function convertTonumber(str){
     console.log(parseInt(str));
@@ -15,3 +17,4 @@ function usingRadix(str){
 }
 
 convertTonumber("100");
+usingRadix("101");

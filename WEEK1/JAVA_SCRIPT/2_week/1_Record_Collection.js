@@ -1,3 +1,4 @@
+// IMPORTANT ⭐
 
 // SMALL PROJECT RECORD COLLECTION 
 //  -> NEED TO UPDATE A nested OBJECT 
@@ -61,4 +62,4 @@ function change1(id,prop,value){
 
 
 console.log(change1(2548,"album","rishi"));
-// console.log(collection);
+console.log(collection);
