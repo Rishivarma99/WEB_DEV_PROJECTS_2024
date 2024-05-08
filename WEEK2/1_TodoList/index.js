@@ -1,11 +1,17 @@
 
 // IMPORTANT POINTS : 
+// TO ADD BUTTON EVENT LISTNER WE USE ATTRIBUTE (DATA-ACTION) AND SWITCH CASE 
+// USED DATE FUNCTION TO GET THE PRESENT DATE 
+// WE CAN MANUPULATE PLACE HOLDER USING PSUEDO ELEMENT ::placeholder
+
 // USE ARROW FUNCTION WE NEED TO WRITE A FUNCTION INSIDE IT
 // USED INDEXOF ARRAY METHOD TO FIND THE INDEX IN TASKS ARRAY TO DELETE A GIVEN TASK 
 // WE SHOULD ADD EVENT LISTNER TO EXECUTE THEM 
 
 const addBtn = document.getElementById("add-btn"); // button 
 const taskList = document.getElementById("task-list"); // ul
+const presentDateTag = document.getElementById("Present-date");
+const presentdate = new Date();
 
 const tasks = [
     {
@@ -13,19 +19,30 @@ const tasks = [
         completed: false
     }
 ] ;
+// UPDATING PRESENT DATE : 
+const day = presentdate.getDate()  ; 
+const month = presentdate.getMonth() + 1 ;
+const year = presentdate.getFullYear() ;
+presentDateTag.textContent=`${day} - ${month} - ${year} `;
 
 // DISPLAY TASKS ACCORDING TO ARRAY AND ADD EVENT LISTNER TO EACH LIST BUTTON  
 function displayTasks(){
-    taskList.innerHTML = "";
-    for(const task of tasks){
+    taskList.innerHTML = "";   
+    for(const task of tasks)
+    {
         let li = document.createElement("li");
         li.innerHTML= `
-         <span> ${task.description} - ${task.completed ? "Completed" : "Pending"}  </span> 
-            <button data-action="delete" class="deletebtn">Delete</button>
-             <button data-action="edit" class="editbtn">Edit</button> 
-             <button data-action="done" class="donebtn">Done</button>
+        <div class="task-div">
+        <span class="description">${task.description}</span>
+        <span class="status">${task.completed ? "completed" :"pending"}</span> 
+    </div>
+    <div class="btn-div">
+        <button action="delete" class="deletebtn">delete</button>
+        <button action="edit" class="editbtn">Edit</button> 
+        <button action="done" class="donebtn">Done</button>
+    </div>
         ` ;
-    //   ADDING EVENTLISTNERS TO EACH LIST BUTTONS EFFICIENTLY USING DATA-ACTION ATTRIBUTE    
+    // ⭐  ADDING EVENTLISTNERS TO EACH LIST BUTTONS EFFICIENTLY USING DATA-ACTION ATTRIBUTE    
             li.querySelectorAll('button').forEach(button => {
                 button.addEventListener('click', () => {
                     const action = button.dataset.action;
@@ -43,7 +60,6 @@ function displayTasks(){
                 });
             });
             taskList.appendChild(li);
-            
     }    
 }
 

@@ -1,4 +1,11 @@
 
+*{
+    padding: 0;
+}
+body{
+    background-color: #DFD0B8;
+}
+
 h1 , h2{
     text-align: center;
     color: red;
@@ -9,19 +16,31 @@ h1 , h2{
 }
 
 #input-bar{
-
+    display: flex;
+    width: 50%;
+    margin-left: 25%;
+    align-items: center;
+    justify-content: space-between;
 }
 
-div{
+
+#input-bar input{
+    width: 80%;
+    border-radius: 2rem;
+    height: 4vh;
+}
+
+#main{
     text-align: center;
-    background-color: azure;
+    background-color: #948979;
     color: black;
     margin-top: 30px;
-    
+    padding: 1%;
     font-size: 25px;
 }
 li{
     cursor: pointer;
+    list-style: none;
 }
 
 #task-list{
@@ -29,8 +48,84 @@ li{
 }
 
 #task-list li{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ margin-bottom: 10px;
+}
+
+.task-div {
+color: #153448;
+min-width: 60%;
+max-width: 70%;
+display: flex;
+justify-content: space-evenly;
+}
+.task-div .description{
+ max-width: 60%;
+ font-size: 2rem;
+ text-transform: uppercase;
+}
+
+.task-div .status {
+ max-width: 30%; 
+ font-size: 2rem;
+ text-transform: uppercase;
+
 
 }
-.deletebtn .editbtn .donebtn{
-    margin: 5px;
-} 
+
+.btn-div{
+    display: flex;
+    justify-content: space-evenly;
+    min-width: 30%;
+}
+
+button{
+    padding: 5px;
+    border: none;
+    border-radius: 1rem;
+    width: 6rem;
+    text-transform: capitalize;
+}
+
+.deletebtn{
+    font-size: 1.5rem;
+    background-color: #DFD0B8;
+}
+.editbtn{
+    font-size: 1.5rem;
+    background-color: #153448;
+    color: white;
+}
+.donebtn{
+    font-size: 1.5rem;
+    background-color: #DFD0B8;
+
+}
+#add-btn{
+    background-color: #3C5B6F;
+    color: white;
+    font-size: 2rem;
+
+
+}
+
+
+/* PSEUDO ELEMENT  */
+input {
+    background-color: #153448;
+    border: none;
+    border : 4px solid #DFD0B8  ;
+    color: white;
+    font-size: 2rem;
+    padding: 10px;
+
+}
+input::placeholder{
+    text-align: center;
+    font-size: 1rem;
+    color: white;
+    padding: 10px;
+
+}
