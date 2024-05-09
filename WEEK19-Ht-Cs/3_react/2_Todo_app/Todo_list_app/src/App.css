@@ -1,0 +1,26 @@
+
+
+h1{
+  font-weight: 700;
+  font-size: 40px;
+  margin: 10px ;
+}
+
+input{
+  width: 100%;
+}
+
+.todo-container{
+ 
+}
+
+.items-container{
+  text-align: left;
+}
+.r-row { 
+  margin: 10px 5px;
+}
+.r-button {
+  min-width:80px;
+  /* width: 80%; */
+}

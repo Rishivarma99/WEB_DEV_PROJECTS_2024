@@ -1,5 +1,5 @@
 // USING ARRAYS OF OBJECTS 
-
+// USED FOR EACH TO TRAVERSE CHOICES IN A QUESTION 
 
 var questions = [
     {
