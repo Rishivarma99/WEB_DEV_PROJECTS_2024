@@ -1,10 +1,10 @@
-function ItemList() {
-  let foodItems = ["dal", "milk"];
+import CreateList from "./CreateList";
 
+function ItemList({ itemsArray }) {
   return (
     <ul className="list-group">
-      {foodItems.map((item) => (
-        <ItemList food={item}></ItemList>
+      {itemsArray.map((item) => (
+        <CreateList key={item} food={item}></CreateList>
       ))}
     </ul>
   );

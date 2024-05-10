@@ -1,8 +1,7 @@
-function ErrorMessage() {
-  let foodItems = ["dal", "milk"];
-  {
-    foodItems.length === 0 && <h1>I am so thirty </h1>;
+const ErrorMessage = ({ itemsArray }) => {
+  if (itemsArray.length === 0) {
+    return <h1>I am so thirsty</h1>;
   }
-}
+};
 
 export default ErrorMessage;

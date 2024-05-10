@@ -6,14 +6,15 @@ import ErrorMessage from "./components/ErrorMessage";
 import ItemList from "./components/ItemList";
 
 function App() {
-  
+  let foodItems = ["dal", "milk", "badam", "roti"];
+
   return (
     <>
-      <h1>Food dishes </h1>
+      <h1 className="r-heading">Food dishes </h1>
 
-      <ErrorMessage></ErrorMessage>
+      <ErrorMessage itemsArray={foodItems}></ErrorMessage>
 
-      <ItemList></ItemList>
+      <ItemList itemsArray={foodItems}></ItemList>
     </>
   );
 }
