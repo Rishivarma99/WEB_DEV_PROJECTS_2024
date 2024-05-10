@@ -1,8 +1,17 @@
 .r-List{
   background-color: bisque;
   color: blueviolet;
+  font-size: 1.5rem;
 }
 
 .r-Span{
   font-weight: 500;
+}
+
+.button{
+  float: right;
+}
+
+.buy-list{
+  background-color: black;
 }
