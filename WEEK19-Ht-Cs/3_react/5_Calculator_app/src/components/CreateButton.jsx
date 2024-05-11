@@ -1,7 +1,14 @@
 import css from "./CreateButton.module.css";
 
-const CreateButton = ({ value }) => {
-  return <button className={`${css.myButton} `}>{value}</button>;
+const CreateButton = ({ value, handleOnClick }) => {
+  return (
+    <button
+      className={`${css.myButton} `}
+      onClick={(event) => handleOnClick(event)}
+    >
+      {value}
+    </button>
+  );
 };
 
 export default CreateButton;
