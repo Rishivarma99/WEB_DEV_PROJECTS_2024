@@ -11,7 +11,7 @@ function CreateList({ food, bought, handleButton }) {
       <span className={`${styles["r-Span"]}`}>{food}</span>
       <button
         className={`${styles.button} btn btn-info`}
-        onClick={handleButton}
+        onClick={(event) => handleButton(event)}
       >
         Buy
       </button>

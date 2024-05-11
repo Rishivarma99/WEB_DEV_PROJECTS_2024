@@ -15,7 +15,7 @@ import { useState } from "react";
 function App() {
   // let foodItems = ["dal", "milk", "badam", "roti"];
   // used [] to destruct the array for usestate hook
-  let [textToShow, setTextState] = useState("Food item entered by user"); // using usestate to alter the variable
+  // let [textToShow, setTextState] = useState("Food item entered by user"); // using usestate to alter the variable
 
   let [foodItems, setFoodItems] = useState(["dal", "milk", "badam", "roti"]); //use usestate to add new elements to array
 
@@ -29,7 +29,7 @@ function App() {
       console.log(`Food value entered is ${newFoodItem}`);
     }
 
-    setTextState(event.target.value);
+    // setTextState(event.target.value);
   };
 
   return (
