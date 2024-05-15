@@ -10,6 +10,23 @@ import { useReducer, useState } from "react";
 import WelecomeMessage from "./components/WelcomeMessage";
 import { TodoItems } from "./store/todo-items-store";
 
+const reducerFunction = (intialState, action) => {
+  let newTodoItems = intialState;
+
+  if (action.type == "NEW_ITEM") {
+    newTodoItems = [
+      ...intialState,
+      { task: action.payload.itemName, date: action.payload.itemDueDate },
+    ];
+  } else if (action.type == "DELETE_ITEM") {
+    console.log("hi");
+    newTodoItems = intialState.filter(
+      (item) => item.task != action.payload.itemToDelete
+    );
+  }
+  return newTodoItems;
+};
+
 function App() {
   let todoItems1 = [
     {
@@ -22,25 +39,28 @@ function App() {
     },
   ];
 
-  let [todoItems, addItems] = useState(todoItems1);
+  let [todoItems, dispachFunction] = useReducer(reducerFunction, []);
 
   let handleAddButton = (itemName, itemDueDate) => {
-    // console.log(`name : ${itemName}`);
-    // console.log(`name : ${itemDueDate}`);
-    // const newTodoItem = [...todoItems, { task: itemName, date: itemDueDate }]; // NOT GOOD FOR COMPLEX TASKS
-    // addItems(newTodoItem);
-    // TO UPDATE VALUES USING FUNCTIONSAL UPDATES
-    addItems((curValue) => [
-      ...curValue,
-      { task: itemName, date: itemDueDate },
-    ]);
+    // create a obj
+    let actionObject = {
+      type: "NEW_ITEM",
+      payload: {
+        itemName: itemName,
+        itemDueDate: itemDueDate,
+      },
+    };
+    dispachFunction(actionObject);
   };
 
   let handleDeleteItem = (itemToDelete) => {
-    console.log(itemToDelete);
-    //  use filter method
-    let newTodoItem = todoItems.filter((item) => item.task != itemToDelete);
-    addItems(newTodoItem);
+    let actionObject = {
+      task: "DELETE_ITEM",
+      payload: {
+        itemToDelete: itemToDelete,
+      },
+    };
+    dispachFunction(actionObject);
   };
 
   return (
@@ -51,7 +71,6 @@ function App() {
         handleDeleteItem: handleDeleteItem,
       }}
     >
-      {/* //value stores the default value and when todo items change whole page changes  */}
       <center className="todo-container m-3">
         <AppName />
         <AddToDo handleNewItem={handleAddButton} />
@@ -63,8 +82,3 @@ function App() {
 }
 
 export default App;
-
-{
-  /* <ToDoItem1 task={"Hw-1"} date={"26/01/2024"}></ToDoItem1>
-<ToDoItem1 task={"Hw-2"} date={"26/01/2024"}></ToDoItem1> */
-}
