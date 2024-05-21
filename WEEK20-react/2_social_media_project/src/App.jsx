@@ -17,8 +17,8 @@ function App() {
         <Sidebar1></Sidebar1>
         <div className="content">
           <Header1></Header1>
-         { selectedTab=={"Home"} && <CreatePost></CreatePost>  } 
-          {  if(selectedTab=={"CreatePost"}){<CreatePost></CreatePost>} }
+          {selectedTab == "Home" && <CreatePost></CreatePost>}
+          {selectedTab == "CreatePost" && <CreatePost></CreatePost>}
           <PostList></PostList>
           <Footer1></Footer1>
         </div>

@@ -1,4 +1,5 @@
 
+/* 21-may-25 : added media queries   */
 *{
     padding: 0;
 }
@@ -56,20 +57,20 @@ li{
 
 .task-div {
 color: #153448;
-min-width: 60%;
-max-width: 70%;
+min-width: 70%;
 display: flex;
-justify-content: space-evenly;
+/* justify-content: space-evenly; */
+align-items: center;
 }
 .task-div .description{
- max-width: 60%;
+ min-width: 75%;
  font-size: 2rem;
  text-transform: uppercase;
 }
 
 .task-div .status {
- max-width: 30%; 
- font-size: 2rem;
+ min-width: 25%; 
+ font-size: 1.5rem;
  text-transform: uppercase;
 
 
@@ -77,29 +78,31 @@ justify-content: space-evenly;
 
 .btn-div{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     min-width: 30%;
+    gap: 2%;
 }
 
 button{
     padding: 5px;
     border: none;
     border-radius: 1rem;
-    width: 6rem;
+    width: 5rem;
     text-transform: capitalize;
+
 }
 
 .deletebtn{
-    font-size: 1.5rem;
+    font-size: 1rem;
     background-color: #DFD0B8;
 }
 .editbtn{
-    font-size: 1.5rem;
+    font-size: 1rem;
     background-color: #153448;
     color: white;
 }
 .donebtn{
-    font-size: 1.5rem;
+    font-size: 1rem;
     background-color: #DFD0B8;
 
 }
@@ -127,5 +130,60 @@ input::placeholder{
     font-size: 1rem;
     color: white;
     padding: 10px;
+
+}
+
+@media (max-width:750px) {
+    
+    body{
+        margin: 0;
+    }
+    #input-bar{
+        width: 100%;
+        margin: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+    }
+    #input-bar input{
+        width : 100%
+    }
+
+    #task-list li{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .task-div {
+        
+        width: 100%;
+    }
+    .task-div .description{
+        width: 80%;
+        text-align: left;
+    }
+    .btn-div{
+        justify-content: space-evenly;
+        width: 100%;
+        font-size: 1rem;
+    }
+    #task-list li {
+        border: 2px solid #DFD0B8;
+        padding: 5px;
+    }
+
+
+
+}
+@media (max-width:450px) {
+    
+    .task-div .description{
+        width: 70%;
+        font-size: 1.5rem;
+    }
+    .task-div .status{
+        width: 70%;
+        font-size: 1rem;
+        
+    }
 
 }
