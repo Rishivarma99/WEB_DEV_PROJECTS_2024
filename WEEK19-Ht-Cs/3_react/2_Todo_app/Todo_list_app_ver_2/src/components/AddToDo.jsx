@@ -10,7 +10,7 @@ import { Collapse } from "bootstrap";
 import { TodoItems } from "../store/todo-items-store";
 
 function AddToDo() {
-  // let [todoName, setTodoName] = useState("");
+  // let [todoName, setTodoName] = useState(""); TO USE ONCHANGE 
   // let [dueDate, setDueDate] = useState("");
 
   let contextObject = useContext(TodoItems);
@@ -20,6 +20,7 @@ function AddToDo() {
   let todoNameElement = useRef();
   let dueDateElement = useRef();
 
+  // DUE TO USE OF REF WE CAN AVOID THIS 
   // let handleTodoName = (event) => {
   //   setTodoName(event.target.value);
   // };

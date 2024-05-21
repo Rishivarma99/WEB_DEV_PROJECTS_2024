@@ -7,7 +7,7 @@ function ToDoItem1(props) {
   let todoTask = props.task;
   let todoDate = props.date;
 
-  let contextObject = useContext(TodoItems);
+  let contextObject = useContext(TodoItems); // TO GET HE DELETE FUNTION FROM STORE
 
   let onDeleteCLick = contextObject.handleDeleteItem;
 

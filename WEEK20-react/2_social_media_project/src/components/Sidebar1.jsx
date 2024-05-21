@@ -1,4 +1,4 @@
-function Sidebar1() {
+function Sidebar1({ handlePage, selectedTab }) {
   return (
     <>
       <div
@@ -17,7 +17,14 @@ function Sidebar1() {
         <hr />
         <ul className="nav nav-pills flex-column mb-auto">
           <li className="nav-item">
-            <a href="#" className="nav-link active" aria-current="page">
+            <a
+              href="#"
+              className={` nav-link ${
+                selectedTab == "Home" ? "active" : "text-blue"
+              } `}
+              aria-current="page"
+              onClick={handlePage}
+            >
               <svg className="bi pe-none me-2" width="16" height="16">
                 <use xlinkHref="#home"></use>
               </svg>
@@ -25,11 +32,17 @@ function Sidebar1() {
             </a>
           </li>
           <li>
-            <a href="#" className="nav-link text-white">
+            <a
+              href="#"
+              className={` nav-link ${
+                selectedTab == "CreatePost" ? "active" : "text-blue"
+              } `}
+              onClick={handlePage}
+            >
               <svg className="bi pe-none me-2" width="16" height="16">
                 <use xlinkHref="#speedometer2"></use>
               </svg>
-              createpost
+              CreatePost
             </a>
           </li>
         </ul>

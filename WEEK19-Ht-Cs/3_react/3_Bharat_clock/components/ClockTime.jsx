@@ -13,7 +13,7 @@ function ClockTime() {
   // };
 
   let presentDate = new Date();
-  let date = `${presentDate.toLocaleDateString()}`;
+  let date = `${presentDate.toLocaleDateString()}`; // IMP
   let time = `${presentDate.toLocaleTimeString()}`;
 
   return (
