@@ -8,7 +8,7 @@ const PostList = () => {
   return (
     <>
       {postList.map((post) => (
-        <Post key={post.id} /> // this is just a return statement so no need {}
+        <Post key={post.id} post={post} /> // this is just a return statement so no need {}
       ))}
     </>
   );

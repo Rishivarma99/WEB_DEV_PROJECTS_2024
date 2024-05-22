@@ -11,31 +11,67 @@ export const PostList1 = createContext({
 });
 
 const reducerFunction = (currentPostList, action) => {
-  return currentPostList;
-};
+  let newPostList = currentPostList;
+  if (action.type == "delete") {
+    newPostList = currentPostList.filter(
+      (post) => post.id !== action.payload.postId
+    );
+  } else if (action.type == "ADD_POST") {
+    newPostList = [
+      ...currentPostList,
+      {
+        id: action.object.userId,
+        title: action.object.title,
+        body: action.object.body,
+        reactions: action.object.reactions,
+        userId: action.object.userId,
+        tags: action.object.tags,
+      },
+    ];
+  }
 
-const addPost = () => {
-  console.log("hi");
+  return newPostList;
 };
-
-const deletePost = () => {
-  console.log("hi");
-};
-
 const PostListProvider = ({ children }) => {
   const [postList, dispatchPostList] = useReducer(
     reducerFunction,
     DEFAULT_POST_LIST
   );
-  const contentValue = {
-    postList,
-    addPost,
-    deletePost,
+  // const contentValue = {
+  //   postList,
+  //   addPost,
+  //   deletePost,
+  // };
+
+  const addPost = (object) => {
+    console.log(object);
+    const actionObject = {
+      type: "ADD_POST",
+      object,
+    };
+    dispatchPostList(actionObject);
   };
 
+  const deletePost = (postId) => {
+    let actionObject = {
+      type: "delete",
+      payload: {
+        postId: postId,
+      },
+    };
+    dispatchPostList(actionObject);
+  };
   return (
     // the value must be always be given as a object
-    <PostList1.Provider value={contentValue}>{children}</PostList1.Provider>
+    <PostList1.Provider
+      value={{
+        postList,
+        addPost,
+        deletePost,
+      }}
+    >
+      {children}
+    </PostList1.Provider>
   );
 };
 
