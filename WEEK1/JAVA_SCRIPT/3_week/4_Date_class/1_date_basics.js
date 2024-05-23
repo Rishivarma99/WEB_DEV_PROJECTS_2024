@@ -9,7 +9,7 @@
   ->getFullYear(): we will get the year 
   ->getDay: also 0-indexing and returns a number from 0 to 6 : from Sunday(0) to Saturday(6) 
   ->getTime(): returns in millisections from 1970(fixed time)  : can be used to get the difference between two time objects 
-  ->toLocaleDateString : get in date format
+  ->toLocaleDateString : get in date format in clear way 
   ->toLocaleTimeString : to get time format
 
  */

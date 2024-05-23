@@ -4,8 +4,8 @@
 
 const obj1 = {
     x: "hi",
-    y : "hello",
-    z:"bye"
+    y: "hello",
+    z: "bye"
 }
 
 // TO CPY NORMALLY 
@@ -16,21 +16,21 @@ const obj1 = {
 // TO CPY USING DESTRUCTOR
 
 // x:a means to copy the value of property x of obj1 in a 
-const {x: a, y:b ,z:c} = obj1;
+const { x, y: b, z: c } = obj1;
 
-console.log(a); // print 
+console.log(x); // print 
 
 // BASIC EXAMPLE 
 
 const AVG_TEMPERATURE = {
-    today : 31.5,
-    tomorrow : 70 
+    today: 31.5,
+    tomorrow: 70
 };
 
-function getTempOfTom(avgTemp ){  // avgTemp is cpy of object AVG_TEMPERATURE 
-     // avgTemp is a object here 
+function getTempOfTom(avgTemp) {  // avgTemp is cpy of object AVG_TEMPERATURE 
+    // avgTemp is a object here 
     // we are taking the value in obje and coping it into tempOftom from avgTemp(AVG_TEMPERATURE) object 
-    const {tomorrow : tempOftom } = avgTemp;
+    const { tomorrow: tempOftom } = avgTemp;
     return tempOftom;
 }
 
