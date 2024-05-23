@@ -1,0 +1,71 @@
+body{
+    background-color: #05c46b;
+    font-family: Verdana;
+}
+
+form{
+    background-color: white;
+    padding: 10px;
+    padding-top: 10px;
+   margin: 50px auto;
+   max-width: 500px;
+}
+
+.form-control{
+text-align: left;
+}
+
+h1{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+
+}
+
+div.label-control{
+     margin: 10px;
+     margin-bottom: 20px;
+}
+
+
+input{
+    margin-top: 10px;
+    padding: 10px;
+    
+}
+#describe_you{
+    margin-top: 10px;
+
+}
+
+.label-control input,.label-control select ,.label-control textarea{
+    width: 95%;
+    display: block;
+    padding: 10px;
+}
+
+.label-control select {
+    width: 100%;
+}
+
+button{
+    display: block;
+    background-color: #05c46b;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding: 5px;
+    font-size: 21px;
+   border: 1px solid #777;
+}
+
+.label-control input[type="radio"],
+		.label-control input[type="checkbox"] {
+			display: inline-block;
+			width: auto;
+		}
+
+        a{
+            color: darkgreen;
+            text-decoration: none;
+        }

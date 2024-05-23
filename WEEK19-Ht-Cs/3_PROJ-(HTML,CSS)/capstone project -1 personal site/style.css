@@ -1,0 +1,154 @@
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(./fonts/Copperplate-Gothic-Std-29-AB.ttf);
+}
+@font-face {
+    font-family: naxie one;
+    src: url(./fonts/Nixie\ One\ 400.ttf);
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    
+    
+    
+}
+.page
+{
+    background-color: #76819E;
+    width: 100%;
+    height: 95vh;
+}
+
+#one{
+   
+    background-image: url(./images/mountain-1.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    position: relative;
+}
+
+/* heading is div here to keep flex */
+#one #heading{
+    position: absolute;
+    top: 22vh;
+    /* left: 40%; */
+    width: 100%;
+       display: flex;
+       flex-direction: column;
+       gap: 10px;
+       
+       align-items: center;
+}
+
+#one #heading #para-1 {
+     font-family: myFirstFont;
+     font-size: 67px;
+     color: #232549;
+}
+#one #heading #para-2 {
+    font-family: myFirstFont;
+    font-size: 30px;
+    color: #232549;
+}
+
+/* entering into section two  */
+
+#two{
+    position: relative;
+    height: 90vh;
+}
+
+/* about id is of div having flex  */
+#two #about{
+    position: absolute;
+    top: 10vh;
+    /* left: 40%; */
+    width: 100%;
+       display: flex;
+       flex-direction: column;
+       gap: 10px;
+       
+       align-items: center;
+   
+}
+
+#two img{
+    border-radius: 50%;
+    width: 250px;
+ 
+}
+/* here about-1 and -2 are para in section 2  */
+
+#two #about-1{
+   font-size: 60px;
+   margin: 30px 0px;
+   color: #3A3430;
+   
+   
+
+}
+#two #about-2{
+    font-size: 20px;
+   
+    text-transform: capitalize;
+    width: 40%;
+    text-align: center;
+    color:#3A3430;
+}
+
+/* section 3 start about skills  */
+
+#three{
+    height: 100vh;
+    position: relative;
+    
+}
+
+#three #skills{
+    position: absolute;
+    top: 10vh;
+    /* left: 40%; */
+    width: 100%;
+       display: flex;
+       flex-direction: column;
+       gap: 50px;
+       
+       align-items: center;
+}
+#skills p{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.skill1{
+ display: flex;
+ margin: 0px 20%;
+
+}
+
+.skills .skill-sub {
+    
+}
+#skills h2{
+    text-align: center;
+    font-size: 40px;
+    color: #3A3430;
+}
+.skill1 img {
+    float: left;
+    width: 350px;
+    height: 300px;
+}
+.skill-flex p{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    font-size: 25px;
+    display: inline;
+}
+
+#four {
+    
+}

@@ -1,0 +1,47 @@
+
+
+/* heading fonts : 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Teko:wght@500&family=Tilt+Neon&display=swap" rel="stylesheet">
+
+font-family: 'Teko', sans-serif;
+font-family: 'Tilt Neon', sans-serif; */
+
+*{
+    margin: 0px;
+    padding:0px;
+   
+    font-family: 'Teko', sans-serif;
+    background-color: #FD0054;
+}
+
+main{
+    margin: 0px 20%;
+    margin-top: 200px;
+    text-align: center;
+}
+#main-para{
+    font-size: 2rem;
+}
+
+img{
+    height: 200px;
+}
+
+#main-heading {
+    font-size: 4rem;
+}
+
+#about{
+    background-color: #CF0A0A;
+    border: 1px solid #EEEEEE;
+
+}
+
+#about-title{
+    
+}
+#about-para{
+
+}

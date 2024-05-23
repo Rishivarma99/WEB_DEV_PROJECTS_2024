@@ -1,0 +1,200 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#title{
+    text-align: center;
+ 
+}
+
+#title #title-1{
+
+    color: red;
+    font-family: 'Ubuntu Mono', monospace;
+    margin-top: 5px;
+    font-size: 50px;
+
+}
+#title #title-2{
+        margin-top:4px ; 
+        font-size:20px ;
+        margin-bottom: 10px;
+}
+
+.navbar{
+ 
+    background-color: #808080;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+.navbar .navbar-photo{
+    display: flex;
+    justify-content: center;
+    
+    
+
+}
+.navbar .navbar-photo img{
+height: 50px;
+}
+
+.navbar .navbar-content {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    
+    
+}
+
+.navbar .navbar-content ul{
+
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    justify-content:center;
+    color: white;
+    font-size: 15px;
+
+}
+
+.home{
+    border: 1px solid black;
+    text-align: center;
+    background: url(./home-main-3.jpg);
+    background-size: 100% 100%;
+
+}
+
+.home .home-title-1{
+    
+   margin-top: 20px;
+   margin-bottom :10px ;  
+   color: white ;
+   font-weight:bolder;
+   background-color: black;
+}
+
+.home .home-title-2{
+   display: inline;
+   background-color: yellow;
+   border-radius: 20px;
+   padding: 4px;
+   margin: 10px;
+   margin-bottom:15px ;
+   
+   
+   
+}
+
+
+.home .home-content {
+display: flex;
+gap: 60px;
+justify-content: center;
+margin: 30px;
+margin-bottom: 50px;
+}
+
+.home .home-content .content{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+    
+    border: 1px solid white;
+    width : 200px;
+    height: 150px;
+    box-shadow: 2px 7px 16px 19px;
+    margin-right: 38px;
+    border-radius: 40px;
+    
+    
+    
+}
+
+.home .home-content #content-1{
+    background: url(./img-1.webp);
+    background-size: 100% 100%;
+}
+
+.home .home-content #content-2{
+   background: url(./img-2.jpeg);
+   background-size: 100% 100%;
+
+}
+.home .home-content h3{
+    background-color: yellow;
+    border-radius: 20px;
+    padding: 4px;
+}
+
+.features .features-heading{
+    text-align: center;
+    color: red;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 25px;
+    margin: 10px;
+
+}
+
+.features .features-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr  ;
+    gap: 10px;
+}
+
+.features .features-content .row-1{
+    
+display: flex;
+justify-content: center;
+align-items: end;
+background: url(./img-1.webp);
+background-size: 100% 100%;
+height: 360px;
+border: 2px solid black;
+width: 400px;
+
+
+
+     
+}
+
+.features .features-content .row-2{
+
+    display: flex;
+justify-content: center;
+align-items: end;
+background: url(./img-2.webp);
+background-size: 100% 100%;
+height: 360px;
+border: 2px solid black;
+
+}
+.features .features-content .row-3{
+    
+    display: flex;
+justify-content: center;
+align-items: end;
+background: url(./img-3.webp);
+background-size: 100% 100%;
+height: 360px;
+border: 2px solid black;
+width: 95vw;
+
+}
+
+.features button{
+    color: black;
+    background-color: yellow;
+    font-size: 15px;
+    border-radius: 20px;
+    padding: 5px;
+
+
+}
+
+
+
+

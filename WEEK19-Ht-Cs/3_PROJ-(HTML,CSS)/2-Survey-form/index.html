@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body id="body">
+    <h1>GeeksforGeeks Survey Form</h1>
+
+    <main>
+      <form action="submit" id="form">
+        <div class="label-control">
+          <label for="name"
+          >Name 
+        </label>
+        <br>
+
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter your name"
+            />
+        </div>
+
+        <div class="label-control">
+          <label for="email"
+          >Email
+        </label>
+        <br>
+           
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email"
+            />
+        </div>
+
+        <div class="label-control">
+          <label for="age"
+            >Age
+        </label>
+            <br>
+            <input
+              type="number"
+              name="age"
+              id="age"
+              placeholder="Enter your age"
+            />
+        </div>
+
+        <div class="label-control">
+          <label for="describe_you"> Which Option Best Describe You </label>
+     <br>
+          
+          <select id="describe_you">
+            <option value="">Student</option>
+            <option value="intern">Intern</option>
+            <option value="professional">Professional</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="label-control">
+          <label for="recommend"
+            >Would you recommend GeeksforGeeks to a friend?
+            <br>
+        </label>
+
+            <input type="radio" name="recommend" id="recommend" />Yes
+            <br />
+            <input type="radio" name="recommend" id="recommend" />No
+            <br />
+            <input type="radio" name="recommend" id="recommend" />May be
+        </div>
+
+        <div class="label-control">
+          <label for="skills">
+              Languages and Frameworks known
+              <small> (Check all that apply) </small>
+            </label>
+            <br />
+            <input type="checkbox" id="skills" />C
+            <br />
+            <input type="checkbox" id="skills" />C++
+            <br />
+            <input type="checkbox" id="skills" />C#
+            <br />
+            <input type="checkbox" id="skills" />Java
+            <br />
+            <input type="checkbox" id="skills" />Python
+            <br />
+            <input type="checkbox" id="skills" />JavaScript
+            <br />
+            <input type="checkbox" id="skills" />React
+            <br />
+            <input type="checkbox" id="skills" />Angular
+            <br />
+            <input type="checkbox" id="skills" />Django
+            <br />
+            <input type="checkbox" id="skills" />Spring
+        </div>
+
+        <div class="label-control">
+          <label for="suggestions">
+            Any comments or suggestions
+        </label>
+            <br />
+            <textarea name="comments" id="" cols="55" rows="5" placeholder="Add comments"></textarea>
+        </div>
+        
+        <button type="submit" value="submit" ><a  href="#body" >
+
+            Submit</button>
+        </a>
+      </form>
+    </main>
+  </body>
+</html>
