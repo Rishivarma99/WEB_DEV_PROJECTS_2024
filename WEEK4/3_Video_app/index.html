@@ -1,4 +1,3 @@
-
 <!-- VIDEO PAGE : 
   
   CSS:
@@ -11,6 +10,7 @@
   -> PLAY AND PAUSE BTN : WE have created 2 button sung single button element using span 
 
   JS: 
+  -> video tag and source tag important 
   -> VIDEO METHODS : play(), pause()
   ->get ans set propertie sor attributes of video 
   ->important eventlistners : load,play ,ended
@@ -28,17 +28,14 @@
   </head>
   <body>
     <!-- javascript -->
-    
+
     <div class="preload-div .hide-preload-div">
-           
-      <img src="./preloader.gif" alt="gif" class="preload-img">
+      <img src="./preloader.gif" alt="gif" class="preload-img" />
     </div>
 
-
     <section class="video-page">
-      
-      <video controls autoplay muted  class="video">
-        <source src="./video.mp4">
+      <video controls autoplay muted class="video">
+        <source src="./video.mp4" />
       </video>
       <h1>video project</h1>
 
@@ -48,8 +45,7 @@
         <span class="switch"></span>
       </button>
     </section>
-    
-    
+
     <script src="app.js"></script>
   </body>
 </html>

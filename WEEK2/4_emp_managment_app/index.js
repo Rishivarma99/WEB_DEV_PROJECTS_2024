@@ -7,7 +7,7 @@
 
 // IMPORTANT FUNCTION : 
 // SHOWLIST2 : USED TO SHOW THE LIST DYNAMICALLY USING THE ARRAY OF OBJECTS 
-                // IN THIS I USED FOR LOOP 
+// IN THIS I USED FOR LOOP 
 
 const employees = [
 
@@ -75,14 +75,14 @@ function addEmployee() {
   let employee = {  // object created 
     ID: parseInt(employeeValues[0]),
     NAME: employeeValues[1],
-    GENDER : employeeValues[2],
+    GENDER: employeeValues[2],
     ROLE: employeeValues[3],
-    SALARY : parseInt(employeeValues[4]),
-    "EXPERIANCE(yrs)" : parseFloat(employeeValues[5]),  
-    CONTACT : parseInt(employeeValues[6]), 
-    changeContact(newNum){
-      this.contact=newNum;
-     } 
+    SALARY: parseInt(employeeValues[4]),
+    "EXPERIANCE(yrs)": parseFloat(employeeValues[5]),
+    CONTACT: parseInt(employeeValues[6]),
+    changeContact(newNum) {
+      this.contact = newNum;
+    }
   }
   employees.push(employee);
 
@@ -93,7 +93,7 @@ function showEmployeeList(employees) {
 
   employees.forEach(emp => {
     const employeediv = document.createElement("div");
-     employeediv.classList.add("emp"); // CLASS EMP ADDED 
+    employeediv.classList.add("emp"); // CLASS EMP ADDED 
 
     const idP = document.createElement("p");
     idP.classList.add("details"); // CLASS DETAILS ADDED TO PARA
@@ -122,7 +122,7 @@ function showEmployeeList(employees) {
     roleP.appendChild(roleSpan);
 
     employeediv.appendChild(roleP);
- 
+
     employeeList.appendChild(employeediv);
   });
 
@@ -131,36 +131,34 @@ function showEmployeeList(employees) {
 
 }
 
-function showEmployeeList2(employees){
+function showEmployeeList2(employees) {
 
   // CLEARING MAIN EMPLOYEE LIST BEFORE PRINT 
-  employeeList.innerHTML="";
-  employees.forEach( (emp) => 
-  {
+  employeeList.innerHTML = "";
+  employees.forEach((emp) => {
     const employeeElement = document.createElement("div"); // consit of details of emp div
     employeeElement.classList.add("emp"); // CLASS EMP ADDED 
-    
-    for(const [propertyName , propertyValue] of Object.entries(emp))
-    {
-      if(propertyName == "changeContact"){
+
+    for (const [propertyName, propertyValue] of Object.entries(emp)) {
+      if (propertyName == "changeContact") {
         continue;
       }
       const para = document.createElement("p");
-    para.classList.add("details");
-    
-    const span2 = document.createElement("span"); // default propery 
-    span2.classList.add("propvalue");
-    span2.textContent = propertyName + ":";
-    para.appendChild(span2);
+      para.classList.add("details");
+
+      const span2 = document.createElement("span"); // default propery 
+      span2.classList.add("propvalue");
+      span2.textContent = propertyName + ":";
+      para.appendChild(span2);
 
 
-    const span = document.createElement("span");
-    span.classList.add("uservalue");
-    span.textContent = propertyValue;
-    para.appendChild(span);
+      const span = document.createElement("span");
+      span.classList.add("uservalue");
+      span.textContent = propertyValue;
+      para.appendChild(span);
 
-    employeeElement.appendChild(para);
-   
+      employeeElement.appendChild(para);
+
     }
     employeeList.appendChild(employeeElement);
 
@@ -169,13 +167,13 @@ function showEmployeeList2(employees){
   })
 }
 
-function deleteList (employee){
-   
-var index = employees.indexOf( (emp) => emp== employee);
+function deleteList(employee) {
 
-employees.splice(index,1);
+  var index = employees.indexOf((emp) => emp == employee);
 
-showEmployeeList2(employees);
+  employees.splice(index, 1);
+
+  showEmployeeList2(employees);
 
 }
 

@@ -83,22 +83,20 @@ const menu = [
 ];
 
 // WEBSITE CONTENT ON START: 
- window.addEventListener
- ("DOMContentLoaded", 
-  function ()
-   {
-    showMenu(menu);
-    displayBtn();
-   }
- )
+window.addEventListener
+  ("DOMContentLoaded",
+    function () {
+      showMenu(menu);
+      displayBtn();
+    }
+  )
 
 // GETTING HTML ELEMENTS:
 const menuItems = document.querySelector(".menu-items");
 const btnDiv = document.querySelector(".menu-types-btn");
 
 // FUNCTION TO SHOW THE MENU LIST 
-function showMenu(menu) 
-{
+function showMenu(menu) {
   menuItems.innerHTML = "";
 
   menu.forEach((item) => {
@@ -138,41 +136,38 @@ function showMenu(menu)
 }
 
 //FUNCTION TO DISPLAY AND ADD EVENTLISTNER TO BUTTONS 
- function displayBtn() 
-{
+function displayBtn() {
 
-   // WE ARE COMPLETELY CREATING THE BUTTONS AND ADDING THME IN HTML 
-   // DYBNAMICALLY 
-   btnDiv.innerHTML = "";
+  // WE ARE COMPLETELY CREATING THE BUTTONS AND ADDING THME IN HTML 
+  // DYBNAMICALLY 
+  btnDiv.innerHTML = "";
 
-   // Intially create the catogoes array from menu array to add them into buttons 
-   const categories = menu.reduce( // using reduce after the function complete then reduce returns the acumulator 
-     function (values, item) 
-     {
-     if (!values.includes(item.category)) {
+  // Intially create the catogoes array from menu array to add them into buttons 
+  // create a array named value that have have all name of categories from the menu array  
+  const categories = menu.reduce( // using reduce after the function complete then reduce returns the acumulator 
+    function (values, item) {
+      if (!values.includes(item.category)) {
         values.push(item.category);
       }
       return values; // each iteration accumulator is getting pushed 
     }
     , ["all"] // intial accumulator value array with all
   )
-  // console.log(categories); // cat ready 
+  console.log(categories); // cat ready 
 
   // CREATE THE BUTTONS AND INSERTING THEM  
   const buttons = categories.map((category) => {
     return ` <button data-id=${category} class="menu-btn" >${category}</button>`
   }).join("");
   btnDiv.innerHTML = buttons;
- 
+
   // NOW BUTTONS READY ADD EVENT LISTNER 
   const categoryBtn = document.querySelectorAll(".menu-btn");
   // console.log(categoryBtn);
-  categoryBtn.forEach((btn) => 
-  {
-  
-    btn.addEventListener("click", function (e) 
-    {
-      const newMenu = menu.filter((item) => item.category == e.target.dataset.id);
+  categoryBtn.forEach((btn) => {
+
+    btn.addEventListener("click", function (e) {
+      const newMenu = menu.filter((item) => item.category == e.target.dataset.id); // we are filtering acc to cat
       showMenu(newMenu);
       if (e.target.dataset.id == "all") {
         showMenu(menu);

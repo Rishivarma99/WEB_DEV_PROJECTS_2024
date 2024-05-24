@@ -87,7 +87,7 @@ employeeList.classList.add("main"); //CLASS MAIN ADDED
 
 const propertyNames = Object.keys(employees[0]);
 
-console.log(propertyNames[0]);
+console.log(propertyNames);
 
 const addbtn = document.getElementById("add-btn");
 const deletebtn = document.getElementById("delete-btn");
