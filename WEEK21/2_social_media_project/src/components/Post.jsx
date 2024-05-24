@@ -4,6 +4,10 @@ import { MdDelete } from "react-icons/md";
 import { PostList1 } from "../store/posts-list";
 const Post = ({ post }) => {
   const { deletePost } = useContext(PostList1);
+
+  // to get post reactions object
+  const arr = post.reactions;
+  let totalReactions = arr.likes + arr.dislikes;
   return (
     <div className="card post-card">
       {/* <img src="..." className="card-img-top" alt="..." /> */}
@@ -26,7 +30,8 @@ const Post = ({ post }) => {
         </span>
 
         <div className="alert alert-success card-reactions" role="alert">
-          Your post has been reacted by {post.reactions} people
+          Your post has been reacted by {totalReactions} people
+          {/* {post.reactions} */}
         </div>
       </div>
     </div>

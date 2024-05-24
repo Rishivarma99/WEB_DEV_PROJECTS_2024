@@ -15,7 +15,7 @@ const reducerFunction = (currentPostList, action) => {
   let newPostList = currentPostList;
   if (action.type == "delete") {
     newPostList = currentPostList.filter(
-      (post) => post.id !== action.payload.postId
+      (post) => post.id != action.payload.postId
     );
   } else if (action.type == "ADD_POST") {
     newPostList = [
@@ -53,6 +53,7 @@ const PostListProvider = ({ children }) => {
   };
 
   const addIntialPosts = (postsArray) => {
+    console.log(postsArray);
     {
       const actionObject = {
         type: "ADD_INITIAL_POST",

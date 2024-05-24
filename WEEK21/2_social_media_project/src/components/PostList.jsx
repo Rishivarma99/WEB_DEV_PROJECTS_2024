@@ -10,9 +10,11 @@ const PostList = () => {
   const [fetching, setFetching] = useState(false);
 
   useEffect(() => {
+    const controller = new AbortController();
+    const signal = controller.signal;
     console.log("fetching started ");
     setFetching(true);
-    fetch("https://dummyjson.com/posts")
+    fetch("https://dummyjson.com/posts", { signal })
       .then((res) => res.json())
       .then((obj) => {
         addIntialPosts(obj.posts);
@@ -22,6 +24,7 @@ const PostList = () => {
     console.log("fetching returned");
     return () => {
       console.log("Cleaning use effect "); // runned when we change the page when the postlist is dead
+      // controller.abort();  //without any reason we are aborting error
     };
   }, []);
 
