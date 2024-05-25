@@ -5,7 +5,7 @@ function CreateList({ food, bought, handleButton }) {
   return (
     <li
       className={` list-group-item ${styles["r-List"]} ${
-        bought ? "active" : null
+        bought ? "active" : null // imp
       }`}
     >
       <span className={`${styles["r-Span"]}`}>{food}</span>

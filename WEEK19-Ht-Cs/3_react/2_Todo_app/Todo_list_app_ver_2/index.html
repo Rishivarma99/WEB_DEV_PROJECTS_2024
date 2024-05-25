@@ -1,4 +1,15 @@
-<!doctype html>
+<!-- 
+  ->First passed props of todoitems array and used a map mehtod to show multiple items 
+  ->in addtodo we passed functions via props and using onchange we got taskname and duedate 
+  ->on clicking add button we kept a onclick event listner and we invoked a function that takes the 2n states and send them via a functions to the parent 
+
+  2 : 
+  ->In addtodo we introdured useref to reduce complexity caused by onChange by using current.value
+  ->also managed to deal with forms using onSubmit and event.preventDefault 
+  ->used useContext to bring all details from a special component which decreases passing props to far children  
+ -->
+
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
