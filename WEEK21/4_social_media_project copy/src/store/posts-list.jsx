@@ -7,7 +7,7 @@ import { createContext, useReducer, useState, useEffect } from "react";
 export const PostList1 = createContext({
   postList: [],
   addPost: () => {},
-  fetching: false,
+
   deletePost: () => {},
 });
 
@@ -36,10 +36,7 @@ const reducerFunction = (currentPostList, action) => {
   return newPostList;
 };
 const PostListProvider = ({ children }) => {
-  const [postList, dispatchPostList] = useReducer(
-    reducerFunction,
-    DEFAULT_POST_LIST
-  );
+  const [postList, dispatchPostList] = useReducer(reducerFunction, []);
   // const contentValue = {
   //   postList,
   //   addPost,
@@ -77,26 +74,6 @@ const PostListProvider = ({ children }) => {
   };
 
   // It is good to fetch here so that it wont fetch every time post list is rendered
-  const [fetching, setFetching] = useState(false);
-
-  useEffect(() => {
-    const controller = new AbortController();
-    const signal = controller.signal;
-    // console.log("fetching started ");
-    setFetching(true);
-    fetch("https://dummyjson.com/posts", { signal })
-      .then((res) => res.json())
-      .then((obj) => {
-        addIntialPosts(obj.posts);
-        setFetching(false);
-        // console.log("fetching completed");
-      });
-    // console.log("fetching returned");
-    return () => {
-      // console.log("Cleaning use effect "); // runned when we change the page when the postlist is dead
-      // controller.abort();  //without any reason we are aborting error
-    };
-  }, []);
 
   return (
     // the value must be always be given as a object
@@ -104,7 +81,7 @@ const PostListProvider = ({ children }) => {
       value={{
         postList,
         addPost,
-        fetching,
+
         deletePost,
       }}
     >
