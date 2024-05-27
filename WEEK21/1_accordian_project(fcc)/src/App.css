@@ -1,10 +1,32 @@
 
+body{
+ 
+  
+
+}
+center{
+  padding-top: 50px;
+  background-color: #F8F4E1;
+  width: 100vw;
+  height: 100vh;
+}
 .selection-btn{
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin: 30px auto;
+  font-size: 2rem;
+  background-color: #AF8F6F;
+  color: #240750;
 }
 
 .accordion-main{
-  width: 650px;
+  width: 750px;
   max-width: 90vw;
+}
+.accordion-button{
+ background-color: #8d7964 !important;
+ color: #fff !important;
+ font-size: 1.5rem;
+}
+.accordion-body{
+  background-color: #543310 !important;
+  color:#F8F4E1  ;
 }

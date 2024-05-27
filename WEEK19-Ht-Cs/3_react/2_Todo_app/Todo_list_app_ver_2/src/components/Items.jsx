@@ -11,7 +11,7 @@ const Items = () => {
   let contextObject = useContext(TodoItems);
   // console.log(todo1);
 
-  let todoItems = contextObject.todoItems;  // WE GOTTHE ARRAY 
+  let todoItems = contextObject.todoItems; // WE GOTTHE ARRAY
 
   return (
     <div className={`${css.itemsContainer}`}>

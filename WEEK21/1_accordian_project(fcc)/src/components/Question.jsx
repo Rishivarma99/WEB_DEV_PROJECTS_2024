@@ -1,8 +1,6 @@
 import { useState } from "react";
-
-const Questions = ({ que, handleButton }) => {
-  // useState();
-
+import "../App.css";
+const Question = ({ que, handleButton, toShow }) => {
   return (
     <div className="accordion-item">
       <h2 className="accordion-header">
@@ -13,15 +11,15 @@ const Questions = ({ que, handleButton }) => {
           data-bs-target="#collapseOne"
           aria-expanded="true"
           aria-controls="collapseOne"
-          onClick={() => handleButton(que.id)}
+          onClick={() => handleButton(que)}
         >
           {que.question}
         </button>
       </h2>
       <div
         id="collapseOne"
-        className={` "accordion-collapse collapse " ${
-          que.show == true ? "show" : null
+        className={`"accordion-collapse collapse " ${
+          toShow.includes(que.id) ? "show" : ""
         }`}
         data-bs-parent="#accordionExample"
       >
@@ -30,4 +28,4 @@ const Questions = ({ que, handleButton }) => {
     </div>
   );
 };
-export default Questions;
+export default Question;

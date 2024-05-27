@@ -11,20 +11,6 @@ import PostListProvider, { PostList1 } from "../src/store/posts-list";
 import { Outlet } from "react-router-dom";
 
 function App() {
-  // let [selectedTab, setSelectedTab] = useState("Home");
-
-  // const handlePage = (event) => {
-  //   if (event.target.innerText == "Home") {
-  //     if (selectedTab != "Home") {
-  //       setSelectedTab("Home");
-  //     }
-  //   } else if (event.target.innerText == "CreatePost") {
-  //     if (selectedTab != "CreatePost") {
-  //       setSelectedTab("CreatePost");
-  //     }
-  //   }
-  // };
-
   return (
     <PostListProvider>
       <div className="app-container">
