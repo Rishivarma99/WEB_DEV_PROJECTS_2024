@@ -7,7 +7,7 @@ const ProjectData = [
     Frameworks: "Bootstrap",
     Concepts: "routing",
     Link: "/accordion",
-    ImageSrc: "./src/components/1_accordion/accordion_project.png",
+    ImageSrc: "./src/components/1_accordion/accordion.png",
   },
 ];
 export default ProjectData;
