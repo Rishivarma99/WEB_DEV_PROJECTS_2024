@@ -8,7 +8,7 @@ const ProjectData = [
     Frameworks: "Bootstrap",
     Concepts: "routing",
     Link: "/accordion",
-    ImageSrc: "./src/components/1_accordion/accordion.png",
+    ImageSrc: "./public/accordion.png",
   },
   {
     Id: "2",
@@ -19,7 +19,29 @@ const ProjectData = [
     Frameworks: "Bootstrap",
     Concepts: "routing",
     Link: "/colorGenerator",
-    ImageSrc: "./src/components/2_color_generator/Random_color_generator.png",
+    ImageSrc: "./public/random_color_generator.png",
+  },
+  {
+    Id: "3",
+    Name: "Star_Rating",
+    Description:
+      "This is a basiccolor generator app that generates hex or rgb colors",
+    Languages: ["Html", "Css", "Javascript", "React js"],
+    Frameworks: "Bootstrap",
+    Concepts: "routing",
+    Link: "/starRating",
+    ImageSrc: "./public/star_rating.png",
+  },
+  {
+    Id: "4",
+    Name: "Image Slider",
+    Description:
+      "This is a basiccolor generator app that generates hex or rgb colors",
+    Languages: ["Html", "Css", "Javascript", "React js"],
+    Frameworks: "Bootstrap",
+    Concepts: "routing",
+    Link: "/imageSlider",
+    ImageSrc: "./public/star_rating.png",
   },
 ];
 export default ProjectData;

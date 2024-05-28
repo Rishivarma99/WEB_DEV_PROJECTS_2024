@@ -4,6 +4,8 @@ import App from "./App.jsx";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import AccordionApp from "./components/1_accordion/AccordionApp.jsx";
 import RandomColorGenerator from "./components/2_color_generator/RandomColorGenerator.jsx";
+import StarRating from "./components/3_star_rating/StarRating.jsx";
+import ImageSlider from "./components/4_image_slider/ImageSlider.jsx";
 
 const router = createBrowserRouter([
   {
@@ -17,6 +19,14 @@ const router = createBrowserRouter([
   {
     path: "/colorGenerator",
     element: <RandomColorGenerator></RandomColorGenerator>,
+  },
+  {
+    path: "/starRating",
+    element: <StarRating></StarRating>,
+  },
+  {
+    path: "/imageSlider",
+    element: <ImageSlider></ImageSlider>,
   },
 ]);
 
