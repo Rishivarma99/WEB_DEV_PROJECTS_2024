@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import AccordionApp from "./components/1_accordion/AccordionApp.jsx";
+import RandomColorGenerator from "./components/2_color_generator/RandomColorGenerator.jsx";
 
 const router = createBrowserRouter([
   {
@@ -12,6 +13,10 @@ const router = createBrowserRouter([
   {
     path: "/accordion",
     element: <AccordionApp></AccordionApp>,
+  },
+  {
+    path: "/colorGenerator",
+    element: <RandomColorGenerator></RandomColorGenerator>,
   },
 ]);
 

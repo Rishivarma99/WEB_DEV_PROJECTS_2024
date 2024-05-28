@@ -8,7 +8,7 @@ import ProjectList from "./ProjectList.jsx";
 const Projects_page = () => {
   return (
     <>
-      <main>
+      <main className="ProjectPage_main">
         <div className={` ${css.mainHeading}`}>
           <h1>Projects In React js</h1>
         </div>
