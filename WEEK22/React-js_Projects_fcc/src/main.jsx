@@ -26,7 +26,12 @@ const router = createBrowserRouter([
   },
   {
     path: "/imageSlider",
-    element: <ImageSlider></ImageSlider>,
+    element: (
+      <ImageSlider
+        url={"https://picsum.photos/v2/list"}
+        limit={15}
+      ></ImageSlider>
+    ),
   },
 ]);
 

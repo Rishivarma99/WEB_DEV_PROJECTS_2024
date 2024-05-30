@@ -41,7 +41,7 @@ const ProjectData = [
     Frameworks: "Bootstrap",
     Concepts: "routing",
     Link: "/imageSlider",
-    ImageSrc: "./public/star_rating.png",
+    ImageSrc: "./public/image-slider.png",
   },
 ];
 export default ProjectData;
