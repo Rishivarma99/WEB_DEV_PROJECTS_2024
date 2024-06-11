@@ -11,9 +11,12 @@ INCLUDES :
  */
 
 let str1 = "Hello WOrld"
+let str2 = "murfy";
+
+console.log(str2.includes("mu", 0));
 
 console.log(str1.includes("o")) // true
 console.log(str1.includes("E")) // false
 
 console.log(str1.includes("W")); // true 
-console.log(str1.includes("W",7)); //false
+console.log(str1.includes("W", 7)); //false

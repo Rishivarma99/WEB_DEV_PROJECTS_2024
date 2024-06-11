@@ -33,6 +33,7 @@ function AddToDo() {
     event.preventDefault();
 
     let todoName = todoNameElement.current.value;
+    console.log("hi : " + todoName);
     let dueDate = dueDateElement.current.value;
     handleNewItem(todoName, dueDate);
     // SETTING BOTH INPUT BLACK AFTER PASSING FUNCTUONS
