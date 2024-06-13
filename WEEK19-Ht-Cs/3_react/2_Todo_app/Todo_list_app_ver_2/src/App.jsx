@@ -54,7 +54,7 @@ function App() {
       {/* //value stores the default value and when todo items change whole page changes  */}
       <center className="todo-container m-3">
         <AppName />
-        <AddToDo handleNewItem={handleAddButton} />
+        <AddToDo />
         <WelecomeMessage></WelecomeMessage>
         <Items></Items>
       </center>
