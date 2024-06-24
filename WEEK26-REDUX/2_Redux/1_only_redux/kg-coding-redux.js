@@ -20,6 +20,11 @@ const reducer = (store = INITIAL_VALUE, action) => {
     store.counter = store.counter - 1;
     return store;  // we are returning the store the updated one 
   }
+  else if (action.type == 'ADDITION') {
+    let num = action.payload.number;
+    store.counter = store.counter + num;
+    return store;
+  }
 }
 
 // to create store : 
@@ -33,6 +38,6 @@ const subscriber = () => {
 store.subscribe(subscriber);
 
 store.dispatch({ type: 'INCREMENT' })
-store.dispatch({ type: 'DECREMENT' })
-store.dispatch({ type: 'INCREMENT' })
-store.dispatch({ type: 'INCREMENT' })
+// store.dispatch({ type: 'DECREMENT' })
+// store.dispatch({ type: 'INCREMENT' })
+store.dispatch({ type: 'ADDITION', payload: { number: 7 } })
