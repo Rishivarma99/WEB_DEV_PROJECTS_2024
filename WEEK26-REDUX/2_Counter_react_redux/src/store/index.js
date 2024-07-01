@@ -27,21 +27,28 @@ const counterSlice = createSlice({
     counterValue: 0
   },
   reducers: {
-    increment: (state, action) => {
-      console.log(state, action);
+    increment: (state) => {
+      state.counterValue = state.counterValue + 1;
+      // console.log(state, action);
     },
     decrement: (state, action) => {
-      console.log(state, action);
+      state.counterValue = state.counterValue - 1;
+
+      // console.log(state, action);
 
     }
   }
 
 })
 
+// TO CREATE A STORE REDUX : 
 const counterStore = configureStore({
+  // MULTIPLE REDUCERS CAN BE GIVEN 
   reducer: {
-
+    counter: counterSlice.reducer
   }
 });
 
+// TO EXPORT ACTIONS 
+export const counterActions = counterSlice.actions;
 export default counterStore;

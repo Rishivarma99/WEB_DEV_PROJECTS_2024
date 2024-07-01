@@ -1,13 +1,16 @@
 import { useDispatch } from "react-redux";
-import counterStore from "../store";
+import counterStore, { counterActions } from "../store";
 
 const Controls = () => {
+  // use dispatch
   const counterDispatch = useDispatch();
+
   const handleDecrease = () => {
-    counterDispatch({ type: "DECREMENT" });
+    counterDispatch(counterActions.decrement());
   };
   const handleIncrease = () => {
-    counterDispatch({ type: "INCREMENT" });
+    // we cn also send a payload object
+    counterDispatch(counterActions.increment());
   };
 
   return (
