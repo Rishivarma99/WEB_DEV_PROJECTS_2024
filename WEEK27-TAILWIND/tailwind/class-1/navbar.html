@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Navbar</title>
+  </head>
+  <body>
+    <div class="bg-purple-800 text-white flex justify-between">
+      <img
+        src="https://randomuser.me/api/portraits/med/men/75.jpg"
+        alt="image"
+        class="w-10 h-10 pt-3 px-3 rounded-3xl"
+      />
+      <ul class="flex space-x-12 font-serif px-4 py-3 justify-end capitalize">
+        <li class="cursor-pointer">home</li>
+        <li class="cursor-pointer">products</li>
+        <li class="cursor-pointer">About</li>
+        <li class="cursor-pointer">Contact</li>
+      </ul>
+    </div>
+    <main class="flex bg-fuchsia-200 space-x-2 justify-between px-20">
+      <div class="main h-30 py-20 pl-9">
+        <div class="text-5xl">The Best phone in the town</div>
+        <p class="py-3 w-1/2">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, et
+          suscipit facilis exercitationem obcaecati quaerat inventore sit
+        </p>
+        <div class="button">
+          <button
+            class="bg-purple-500 my-2 rounded-3xl p-2 capitalize text-white hover:bg-purple-800"
+          >
+            buy now
+          </button>
+          <button
+            class="bg-purple-800 my-2 rounded-3xl p-2 capitalize text-white"
+          >
+            Contact us
+          </button>
+        </div>
+      </div>
+      <div class="flex items-center">
+        <img src="./person-talking-on-phone.jpg" alt="phone" class="w-60" />
+      </div>
+    </main>
+  </body>
+</html>
