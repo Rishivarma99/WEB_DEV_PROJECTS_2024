@@ -2,7 +2,7 @@
 
 // TO CREATE A OBJECT USING FUNCTION AND ARROW FUNCTON 
 
-const createPerson=  (name,age,gender)=>(
+const createPerson = (name, age, gender) => (
 
     // creating and returning an object 
     // return {
@@ -10,13 +10,14 @@ const createPerson=  (name,age,gender)=>(
     //     age : age ,
     //     gender : gender
     // };
-    
+
     // OR 
 
     // USING DESTRUCTOT 
-   
-    { name,age,gender}
-    
+
+    { name, age, gender }
+
 )
 
-console.log(createPerson("Rishi",22,"male"));
+// console.log(createPerson("Rishi", 22, "male"));
+createPerson("Rishi", 22, "male");

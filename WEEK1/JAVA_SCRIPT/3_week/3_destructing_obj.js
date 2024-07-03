@@ -8,6 +8,15 @@ const obj1 = {
     z: "bye"
 }
 
+const obj2 = {
+    name: 'rishi',
+    age: '22'
+}
+
+// destruction of object 2 : 
+const { name: myname, age: myage } = obj2;
+console.log("destruction of object2 " + myname + " " + myage);
+
 // TO CPY NORMALLY 
 // const a = obj1.x;
 // const b = obj1.y;

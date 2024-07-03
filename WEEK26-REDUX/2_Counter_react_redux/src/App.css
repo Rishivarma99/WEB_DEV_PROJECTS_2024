@@ -1,4 +1,19 @@
 .reduc-counter-display{
   font-size: 4rem;
-  margin-block: 100px;
+  margin-block: 40px;
+}
+.operation-div{
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.operation-div input{
+  width: 60%;
+  margin: 0px auto;
+  font-size: 1.5rem;
+}
+.operation-div button{
+  width: 60%;
+  margin: 0px auto;
 }

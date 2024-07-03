@@ -1,5 +1,6 @@
 import Controls from "./Controls";
 import Display from "./Display";
+import Operation from "./Operations";
 
 const Header = () => {
   return (
@@ -10,6 +11,7 @@ const Header = () => {
           {/* DISPLAY  */}
           <Display></Display>
           <Controls></Controls>
+          <Operation></Operation>
         </div>
       </div>
     </div>

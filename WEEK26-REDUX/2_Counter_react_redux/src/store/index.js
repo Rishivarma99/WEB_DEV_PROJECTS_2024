@@ -1,26 +1,11 @@
 // import { createStore } from "redux";
 
 import { configureStore, createSlice } from '@reduxjs/toolkit'
-// let INTIAL_VALUE = {
-//   counter: 0,
-// };
 
-// const counterReducer = (store = INTIAL_VALUE, action) => {
-//   if (action.type == "DECREMENT") {
-//     console.log("hi");
-//     let newCounter = store.counter - 1;   // here irrespective of store name we nned to use stroe 
-//     return { counter: newCounter };
-//   }
-//   else if (action.type == "INCREMENT") {
-//     console.log("hi");
-//     let newCounter = store.counter + 1;   // here irrespective of store name we nned to use stroe 
-//     return { counter: newCounter };
-//   }
-//   return store;
-// };
 
 
 // TO CREATE SLICE : 
+// this slices can be individually exported in other files 
 const counterSlice = createSlice({
   name: 'counter',
   initialState: {
@@ -31,24 +16,48 @@ const counterSlice = createSlice({
       state.counterValue = state.counterValue + 1;
       // console.log(state, action);
     },
-    decrement: (state, action) => {
+    decrement: (state) => {
       state.counterValue = state.counterValue - 1;
 
       // console.log(state, action);
 
+    },
+    add: (state, action) => {
+      console.log(action.payload.value);
+      state.counterValue = state.counterValue + action.payload.value;
+    },
+    subtract: (state, action) => {
+      console.log(action.payload.value);
+      state.counterValue = state.counterValue - action.payload.value;
     }
   }
 
+})
+
+// CREATE NEW SLICE FOR PRIVACY TOGGLE 
+
+const privacySlice = createSlice({
+  name: 'privacytoggle',
+  initialState: false,
+  reducers: {
+    toggle: (state) => {
+      state = !state;
+      console.log(state);
+      return state;
+    }
+  }
 })
 
 // TO CREATE A STORE REDUX : 
 const counterStore = configureStore({
   // MULTIPLE REDUCERS CAN BE GIVEN 
   reducer: {
-    counter: counterSlice.reducer
+    counter: counterSlice.reducer,
+    privacytoggle: privacySlice.reducer
   }
 });
 
 // TO EXPORT ACTIONS 
 export const counterActions = counterSlice.actions;
+export const privacyActions = privacySlice.actions;
 export default counterStore;

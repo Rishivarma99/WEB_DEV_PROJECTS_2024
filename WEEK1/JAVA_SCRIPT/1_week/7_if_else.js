@@ -1,4 +1,4 @@
-
+// IF ELSE ARE THE CONDITONAL STATEMENTS 
 
 function checkEqual(value1,value2){
  

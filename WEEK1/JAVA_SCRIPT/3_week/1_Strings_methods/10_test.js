@@ -5,8 +5,12 @@
  */
 
 
-  let str1 = "Rishi134";
-  let str2 = "!@#R"
-  const regrex = /[a-zA-Z0-9]/ ; 
-  console.log(regrex.test(str1));  // true 
-  console.log(regrex.test(str2));  // true 
+let str1 = "Rishi134";
+let str2 = "!@#R"
+let str3 = '123'
+const regrex2 = /[a-zA-Z]/
+const regrex = /[a-zA-Z0-9]/;
+console.log(regrex.test(str1));  // true 
+console.log(regrex.test(str2));  // true 
+
+console.log(regrex2.test(str3)); 
