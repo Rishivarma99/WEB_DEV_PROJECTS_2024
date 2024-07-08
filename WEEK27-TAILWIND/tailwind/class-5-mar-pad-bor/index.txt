@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./input.css" />
+  </head>
+  <body>
+    <div class="main m-10">
+      <h1
+        class="text-blue-500 underline decoration-black capitalize sm:text-1xl md:text-3xl md:text-red-300 font-mono tracking-wider text-center"
+      >
+        This File illustrates Margin border padding
+      </h1>
+      <ul
+        class="flex w- list-none md:text-3xl text-red-500 sm:text-sm capitalize justify-center space-x-4 font-bold"
+      >
+        <li>Margin</li>
+        <li>Padding</li>
+        <li>border</li>
+      </ul>
+    </div>
+    <div>
+      <ul class="flex justify-center space-x-2 space-y-4 m-10 mt-14">
+        <li></li>
+        <li>Home</li>
+        <li>Products</li>
+        <li>contact</li>
+      </ul>
+    </div>
+    <div class="p-10 text-center">PADDING DIV- P-10</div>
+    <div class="m-10">
+      <p
+        class="text-wrap border rounded-full border-red-500 border-solid p-10 outline outline-4"
+      >
+        ROUNDED CLASS Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Veritatis eum fuga placeat ex ipsa quae incidunt, suscipit vel inventore
+        alias debitis quaerat vitae corrupti distinctio possimus. Tempora id nam
+        dolor!
+      </p>
+    </div>
+    <div class="m-10 text-center outline outline-grey-600">
+      <h1 class="text-2xl">BORDER</h1>
+      <button class="border border-red-800 border-4 rounded rounded-lg m-2 p-2">
+        Rounded button
+      </button>
+    </div>
+    <div class="m-10 outline outline-red-600">
+      <h1 class="text-2xl text-center">DIVIDE CLASS</h1>
+      <div class="p-4 flex-column divide-y-8 divide-blue-600 text-1xl">
+        <div>01</div>
+        <div>02</div>
+        <div>03</div>
+      </div>
+    </div>
+    <div class="m-10 outline outline-red-600 h-full p-2">
+      <h1 class="text-2xl text-center">OUTLINE CLASS</h1>
+      <div class="p-4 flex outline outline-5 space-x-9">
+        <div class="outline outline-offset-4">01 outline off is gap</div>
+        <div>02</div>
+        <div>03</div>
+      </div>
+    </div>
+
+    <div class="ring m-10 ring-8 p-10 ring-red-600">This is ring class</div>
+    <h1 class="text-center text-5xl">Create some custom styles</h1>
+    <div class="mx-3 bg-red-600 text-white my-[67px]">
+      HERE DIVEN CUSTOM STYLE UISNG []
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore exercitationem fugiat officiis corrupti, quas sed quisquam error. Fugit in minima dolore autem ex.
+    </divmx-3>
+
+  </body>
+</html>
+
+
+
